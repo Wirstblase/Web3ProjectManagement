@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "794AEB652A379033003A55C9"
+               BuildableName = "Web3ProjectManagement.app"
+               BlueprintName = "Web3ProjectManagement"
+               ReferencedContainer = "container:Web3ProjectManagement.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "794AEB652A379033003A55C9"
+            BuildableName = "Web3ProjectManagement.app"
+            BlueprintName = "Web3ProjectManagement"
+            ReferencedContainer = "container:Web3ProjectManagement.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
