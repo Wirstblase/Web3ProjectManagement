@@ -14,6 +14,7 @@ import Foundation
 
 class ProjectListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var userBalanceLabel: UILabel!
     
     @IBOutlet weak var userProfileImageView: UIImageView!
     
@@ -349,6 +350,39 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
         
     }
     
+    func loadBalance(){
+        
+        Task {
+            do {
+                
+                let url = URL(string: "http://127.0.0.1:7545")
+                
+                let provider = try await Web3HttpProvider(url: url!, network: Networks.Custom(networkID: 5777))
+                
+                let web3 = Web3(provider: provider)
+                
+               
+                let inputAddress = EthereumAddress(myAddressStringGlobal)
+                
+                let balanceResult = try await web3.eth.getBalance(for: inputAddress!)
+                
+                let divisor: Double = 1000000000000000000 // The divisor to achieve the desired decimal places
+
+                var formattedValue = String(format: "%.2f", Double(balanceResult) / divisor)
+                formattedValue = "\(formattedValue) ETH"
+                //if let balance = balanceResult{
+                //print("balance: \(formattedValue)")
+                userBalanceLabel.text = formattedValue
+                
+                
+                
+            } catch {
+                print("error: \(error)")
+            }
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -362,6 +396,7 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
         
         loadUsername()
         loadProfilePicture()
+        loadBalance()
         
         Task{
             
@@ -404,6 +439,10 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "loadProjectSegue", sender: self)
     }
 
     /*
