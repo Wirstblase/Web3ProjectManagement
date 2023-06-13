@@ -17,6 +17,15 @@
 		794AEB842A379039003A55C9 /* Web3ProjectManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AEB832A379039003A55C9 /* Web3ProjectManagementTests.swift */; };
 		794AEB8E2A379039003A55C9 /* Web3ProjectManagementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AEB8D2A379039003A55C9 /* Web3ProjectManagementUITests.swift */; };
 		794AEB902A379039003A55C9 /* Web3ProjectManagementUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AEB8F2A379039003A55C9 /* Web3ProjectManagementUITestsLaunchTests.swift */; };
+		794AEB9D2A37B715003A55C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 794AEB9C2A37B714003A55C9 /* Foundation.framework */; };
+		794AEB9F2A37C16C003A55C9 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AEB9E2A37C16C003A55C9 /* IntroViewController.swift */; };
+		794AEBA12A37D181003A55C9 /* ProjectListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AEBA02A37D181003A55C9 /* ProjectListViewController.swift */; };
+		794AEBA32A37DD18003A55C9 /* projectListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AEBA22A37DD18003A55C9 /* projectListTableViewCell.swift */; };
+		794AEBEA2A37F436003A55C9 /* web3swift in Frameworks */ = {isa = PBXBuildFile; productRef = 794AEBE92A37F436003A55C9 /* web3swift */; };
+		794AEBEC2A380997003A55C9 /* projectContractABI.txt in Resources */ = {isa = PBXBuildFile; fileRef = 794AEBEB2A380997003A55C9 /* projectContractABI.txt */; };
+		794AEBEE2A3809CA003A55C9 /* userManagerABI.txt in Resources */ = {isa = PBXBuildFile; fileRef = 794AEBED2A3809CA003A55C9 /* userManagerABI.txt */; };
+		B96C19F640DF4508B724E753 /* Pods_Web3ProjectManagement_Web3ProjectManagementUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F4F26FDC33B381FA4C5708 /* Pods_Web3ProjectManagement_Web3ProjectManagementUITests.framework */; };
+		CC08B8B80898CFCAE7D9328E /* Pods_Web3ProjectManagementTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B46FFB9A4F0B93E04B4484D8 /* Pods_Web3ProjectManagementTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4FB239D8EC40823725E3920E /* Pods_Web3ProjectManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Web3ProjectManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		794AEB662A379033003A55C9 /* Web3ProjectManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Web3ProjectManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		794AEB692A379033003A55C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		794AEB6B2A379033003A55C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +61,14 @@
 		794AEB892A379039003A55C9 /* Web3ProjectManagementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Web3ProjectManagementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		794AEB8D2A379039003A55C9 /* Web3ProjectManagementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3ProjectManagementUITests.swift; sourceTree = "<group>"; };
 		794AEB8F2A379039003A55C9 /* Web3ProjectManagementUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3ProjectManagementUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		794AEB9C2A37B714003A55C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		794AEB9E2A37C16C003A55C9 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		794AEBA02A37D181003A55C9 /* ProjectListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListViewController.swift; sourceTree = "<group>"; };
+		794AEBA22A37DD18003A55C9 /* projectListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectListTableViewCell.swift; sourceTree = "<group>"; };
+		794AEBEB2A380997003A55C9 /* projectContractABI.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = projectContractABI.txt; sourceTree = "<group>"; };
+		794AEBED2A3809CA003A55C9 /* userManagerABI.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = userManagerABI.txt; sourceTree = "<group>"; };
+		B2F4F26FDC33B381FA4C5708 /* Pods_Web3ProjectManagement_Web3ProjectManagementUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Web3ProjectManagement_Web3ProjectManagementUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B46FFB9A4F0B93E04B4484D8 /* Pods_Web3ProjectManagementTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Web3ProjectManagementTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				794AEB9D2A37B715003A55C9 /* Foundation.framework in Frameworks */,
+				794AEBEA2A37F436003A55C9 /* web3swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC08B8B80898CFCAE7D9328E /* Pods_Web3ProjectManagementTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B96C19F640DF4508B724E753 /* Pods_Web3ProjectManagement_Web3ProjectManagementUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +107,7 @@
 				794AEB822A379039003A55C9 /* Web3ProjectManagementTests */,
 				794AEB8C2A379039003A55C9 /* Web3ProjectManagementUITests */,
 				794AEB672A379033003A55C9 /* Products */,
+				EF79B0BEF7763F6103E4AA77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +124,15 @@
 		794AEB682A379033003A55C9 /* Web3ProjectManagement */ = {
 			isa = PBXGroup;
 			children = (
+				794AEBEB2A380997003A55C9 /* projectContractABI.txt */,
+				794AEBED2A3809CA003A55C9 /* userManagerABI.txt */,
 				794AEB692A379033003A55C9 /* AppDelegate.swift */,
 				794AEB6B2A379033003A55C9 /* SceneDelegate.swift */,
 				794AEB6D2A379033003A55C9 /* ViewController.swift */,
 				794AEB6F2A379033003A55C9 /* Main.storyboard */,
+				794AEBA22A37DD18003A55C9 /* projectListTableViewCell.swift */,
+				794AEBA02A37D181003A55C9 /* ProjectListViewController.swift */,
+				794AEB9E2A37C16C003A55C9 /* IntroViewController.swift */,
 				794AEB752A379038003A55C9 /* Assets.xcassets */,
 				794AEB772A379038003A55C9 /* LaunchScreen.storyboard */,
 				794AEB7A2A379038003A55C9 /* Info.plist */,
@@ -130,6 +158,17 @@
 			path = Web3ProjectManagementUITests;
 			sourceTree = "<group>";
 		};
+		EF79B0BEF7763F6103E4AA77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				794AEB9C2A37B714003A55C9 /* Foundation.framework */,
+				4FB239D8EC40823725E3920E /* Pods_Web3ProjectManagement.framework */,
+				B2F4F26FDC33B381FA4C5708 /* Pods_Web3ProjectManagement_Web3ProjectManagementUITests.framework */,
+				B46FFB9A4F0B93E04B4484D8 /* Pods_Web3ProjectManagementTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +185,9 @@
 			dependencies = (
 			);
 			name = Web3ProjectManagement;
+			packageProductDependencies = (
+				794AEBE92A37F436003A55C9 /* web3swift */,
+			);
 			productName = Web3ProjectManagement;
 			productReference = 794AEB662A379033003A55C9 /* Web3ProjectManagement.app */;
 			productType = "com.apple.product-type.application";
@@ -154,6 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 794AEB962A379039003A55C9 /* Build configuration list for PBXNativeTarget "Web3ProjectManagementTests" */;
 			buildPhases = (
+				1D894BDABF21CCCBD8917F31 /* [CP] Check Pods Manifest.lock */,
 				794AEB7B2A379039003A55C9 /* Sources */,
 				794AEB7C2A379039003A55C9 /* Frameworks */,
 				794AEB7D2A379039003A55C9 /* Resources */,
@@ -172,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 794AEB992A379039003A55C9 /* Build configuration list for PBXNativeTarget "Web3ProjectManagementUITests" */;
 			buildPhases = (
+				F1DF54CFB96D7873682E307C /* [CP] Check Pods Manifest.lock */,
 				794AEB852A379039003A55C9 /* Sources */,
 				794AEB862A379039003A55C9 /* Frameworks */,
 				794AEB872A379039003A55C9 /* Resources */,
+				64D1116B0E991BEBF9FB3CC3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,6 +263,9 @@
 				Base,
 			);
 			mainGroup = 794AEB5D2A379033003A55C9;
+			packageReferences = (
+				794AEBE82A37F436003A55C9 /* XCRemoteSwiftPackageReference "web3swift" */,
+			);
 			productRefGroup = 794AEB672A379033003A55C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,7 +283,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				794AEB792A379038003A55C9 /* LaunchScreen.storyboard in Resources */,
+				794AEBEE2A3809CA003A55C9 /* userManagerABI.txt in Resources */,
 				794AEB762A379038003A55C9 /* Assets.xcassets in Resources */,
+				794AEBEC2A380997003A55C9 /* projectContractABI.txt in Resources */,
 				794AEB712A379033003A55C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,14 +306,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D894BDABF21CCCBD8917F31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Web3ProjectManagementTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64D1116B0E991BEBF9FB3CC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Web3ProjectManagement-Web3ProjectManagementUITests/Pods-Web3ProjectManagement-Web3ProjectManagementUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Web3ProjectManagement-Web3ProjectManagementUITests/Pods-Web3ProjectManagement-Web3ProjectManagementUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Web3ProjectManagement-Web3ProjectManagementUITests/Pods-Web3ProjectManagement-Web3ProjectManagementUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1DF54CFB96D7873682E307C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Web3ProjectManagement-Web3ProjectManagementUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		794AEB622A379033003A55C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				794AEB9F2A37C16C003A55C9 /* IntroViewController.swift in Sources */,
 				794AEB6E2A379033003A55C9 /* ViewController.swift in Sources */,
+				794AEBA12A37D181003A55C9 /* ProjectListViewController.swift in Sources */,
 				794AEB6A2A379033003A55C9 /* AppDelegate.swift in Sources */,
 				794AEB6C2A379033003A55C9 /* SceneDelegate.swift in Sources */,
+				794AEBA32A37DD18003A55C9 /* projectListTableViewCell.swift in Sources */,
 				794AEB742A379033003A55C9 /* Web3ProjectManagement.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +566,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -477,6 +595,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -606,6 +725,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		794AEBE82A37F436003A55C9 /* XCRemoteSwiftPackageReference "web3swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/web3swift-team/web3swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		794AEBE92A37F436003A55C9 /* web3swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 794AEBE82A37F436003A55C9 /* XCRemoteSwiftPackageReference "web3swift" */;
+			productName = web3swift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		794AEB722A379033003A55C9 /* Web3ProjectManagement.xcdatamodeld */ = {
