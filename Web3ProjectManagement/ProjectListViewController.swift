@@ -442,7 +442,7 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "loadProjectSegue", sender: self)
+        performSegue(withIdentifier: "loadProjectFeedSegue", sender: self)
     }
 
     /*

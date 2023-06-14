@@ -8,11 +8,6 @@
 import UIKit
 import web3swift
 
-var web3GlobalAddress = "HTTP://127.0.0.1:7545"
-var myAddressStringGlobal = ""
-var myPrivateKeyStringGlobal = ""
-var mainContractStringGlobal = ""
-
 class IntroViewController: UIViewController {
     
     @IBOutlet weak var mainContractAddressTextField: UITextField!
