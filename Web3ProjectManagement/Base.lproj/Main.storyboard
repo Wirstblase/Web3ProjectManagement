@@ -494,31 +494,82 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to web3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAr-dA-21C">
-                                <rect key="frame" x="139" y="197" width="137" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.9503539205" green="0.91311699150000003" blue="0.89243203400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzI-yD-LmU">
-                                <rect key="frame" x="142" y="92" width="131" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="86x-2L-Abz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMP-Bs-rpV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="425.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Management Platform" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAr-dA-21C">
+                                        <rect key="frame" x="0.0" y="257.5" width="414" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                        <color key="textColor" red="0.9503539205" green="0.91311699150000003" blue="0.89243203400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Web3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAt-mX-um8">
+                                        <rect key="frame" x="0.0" y="178.5" width="414" height="69"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="57"/>
+                                        <color key="textColor" red="0.78900223970000005" green="0.67729204890000005" blue="0.65660899880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzI-yD-LmU">
+                                        <rect key="frame" x="140" y="30" width="134" height="35"/>
+                                        <color key="tintColor" red="0.78900223970000005" green="0.67729204890000005" blue="0.65660899880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="-demo mode-"/>
+                                        <connections>
+                                            <segue destination="J0X-OT-sZG" kind="presentation" modalPresentationStyle="overFullScreen" id="Nd3-LN-ufq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fAr-dA-21C" firstAttribute="leading" secondItem="JMP-Bs-rpV" secondAttribute="leading" id="BKN-0l-Htf"/>
+                                    <constraint firstItem="hzI-yD-LmU" firstAttribute="leading" secondItem="JMP-Bs-rpV" secondAttribute="leading" constant="140" id="FIR-la-abv"/>
+                                    <constraint firstItem="hzI-yD-LmU" firstAttribute="top" secondItem="JMP-Bs-rpV" secondAttribute="top" constant="30" id="LV9-Gb-wJY"/>
+                                    <constraint firstItem="fAr-dA-21C" firstAttribute="top" secondItem="bAt-mX-um8" secondAttribute="bottom" constant="10" id="ahn-FD-6W5"/>
+                                    <constraint firstItem="bAt-mX-um8" firstAttribute="leading" secondItem="JMP-Bs-rpV" secondAttribute="leading" id="dfr-zK-T4n"/>
+                                    <constraint firstAttribute="trailing" secondItem="bAt-mX-um8" secondAttribute="trailing" id="g8I-ie-Zs7"/>
+                                    <constraint firstAttribute="trailing" secondItem="hzI-yD-LmU" secondAttribute="trailing" constant="140" id="iOR-gC-C0n"/>
+                                    <constraint firstAttribute="trailing" secondItem="fAr-dA-21C" secondAttribute="trailing" id="mK2-wt-n6W"/>
+                                    <constraint firstItem="bAt-mX-um8" firstAttribute="centerY" secondItem="JMP-Bs-rpV" secondAttribute="centerY" id="o3b-tV-rN2"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqQ-35-tai">
+                                <rect key="frame" x="129.5" y="425.5" width="155" height="35"/>
+                                <color key="tintColor" red="0.78900223970000005" green="0.67729204890000005" blue="0.65660899880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="-demo mode-"/>
-                                <connections>
-                                    <segue destination="J0X-OT-sZG" kind="presentation" modalPresentationStyle="overFullScreen" id="Nd3-LN-ufq"/>
-                                </connections>
+                                <buttonConfiguration key="configuration" style="filled" title="Log in with wallet"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeO-a9-oP0">
+                                <rect key="frame" x="127" y="480.5" width="160" height="35"/>
+                                <color key="tintColor" red="0.78900223970000005" green="0.67729204890000005" blue="0.65660899880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Create new wallet"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CE7-8Z-qqZ"/>
                         <color key="backgroundColor" red="0.1353132427" green="0.13531374930000001" blue="0.23046940569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CE7-8Z-qqZ" firstAttribute="trailing" secondItem="JMP-Bs-rpV" secondAttribute="trailing" id="0Gv-2f-nwH"/>
+                            <constraint firstItem="aqQ-35-tai" firstAttribute="top" secondItem="JMP-Bs-rpV" secondAttribute="bottom" id="3dq-vU-zeG"/>
+                            <constraint firstItem="JMP-Bs-rpV" firstAttribute="top" secondItem="ymc-xT-lLA" secondAttribute="top" id="CLo-AB-dQh"/>
+                            <constraint firstItem="aqQ-35-tai" firstAttribute="centerX" secondItem="ymc-xT-lLA" secondAttribute="centerX" id="CSL-yq-fQ7"/>
+                            <constraint firstItem="YeO-a9-oP0" firstAttribute="top" secondItem="aqQ-35-tai" secondAttribute="bottom" constant="20" id="FPa-3Y-n0j"/>
+                            <constraint firstItem="aqQ-35-tai" firstAttribute="centerY" secondItem="ymc-xT-lLA" secondAttribute="centerY" id="KeD-Pe-P7o"/>
+                            <constraint firstItem="86x-2L-Abz" firstAttribute="trailing" secondItem="CE7-8Z-qqZ" secondAttribute="trailing" id="TSI-fL-bXs"/>
+                            <constraint firstItem="JMP-Bs-rpV" firstAttribute="leading" secondItem="CE7-8Z-qqZ" secondAttribute="leading" id="VYP-3O-XOX"/>
+                            <constraint firstItem="YeO-a9-oP0" firstAttribute="centerX" secondItem="ymc-xT-lLA" secondAttribute="centerX" id="kh6-8j-gG0"/>
+                            <constraint firstItem="86x-2L-Abz" firstAttribute="leading" secondItem="CE7-8Z-qqZ" secondAttribute="leading" id="oxs-nd-4Gi"/>
+                            <constraint firstItem="86x-2L-Abz" firstAttribute="bottom" secondItem="CE7-8Z-qqZ" secondAttribute="bottom" id="wnO-0Y-GhH"/>
+                            <constraint firstItem="86x-2L-Abz" firstAttribute="top" secondItem="ymc-xT-lLA" secondAttribute="top" id="zEY-gr-ICO"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lnl-OK-ZiP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lpr-Fo-TsA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1493" y="1489"/>
+            <point key="canvasLocation" x="1492.753623188406" y="1488.6160714285713"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="sGh-UE-JZb">
@@ -540,7 +591,7 @@
                                 <color key="textColor" red="0.9503539205" green="0.91311699150000003" blue="0.89243203400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="cool_name_for_your_project" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mat-Ba-jAa">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="project name here" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mat-Ba-jAa">
                                 <rect key="frame" x="100" y="212" width="214" height="34"/>
                                 <color key="backgroundColor" red="0.28839126230000001" green="0.30494147539999999" blue="0.41250830890000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.9503539205" green="0.91311699150000003" blue="0.89243203400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
