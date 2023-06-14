@@ -8,7 +8,7 @@
 import UIKit
 
 var web3GlobalAddress = "HTTP://127.0.0.1:7545"
-var myAddressStringGlobal = ""
+var myAddressStringGlobal = " "
 var myPrivateKeyStringGlobal = ""
 var mainContractStringGlobal = ""
 var selectedContractStringGlobal = ""
