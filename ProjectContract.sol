@@ -7,10 +7,12 @@ contract ProjectContract {
     address public projectOwner;
     uint public totalSupply;
     mapping (address => uint) public balances;
+    address[] public tokenHolders;
 
     // A struct for proposals
     struct Proposal {
         string description;
+        string content; // <-- Add this line
         bool executed;
         int currentVote;
         uint voteCount;
@@ -26,14 +28,16 @@ contract ProjectContract {
 
         // Issue 100 tokens to the project owner
         balances[projectOwner] = totalSupply;
+        tokenHolders.push(projectOwner);
     }
 
-    function propose(string memory description) public {
+    function propose(string memory description, string memory content) public { // <-- Add the new parameter here
         proposals.push();
 
         Proposal storage newProposal = proposals[proposals.length - 1];
 
         newProposal.description = description;
+        newProposal.content = content; // <-- Add this line
         newProposal.executed = false;
         newProposal.currentVote = 0;
         newProposal.voteCount = 0;
@@ -66,7 +70,25 @@ contract ProjectContract {
 
     function transfer(address recipient, uint amount) public {
         require(balances[msg.sender] >= amount, "Not enough tokens.");
+
+        if(balances[recipient] == 0) {
+            tokenHolders.push(recipient);
+        }
+
         balances[msg.sender] -= amount;
         balances[recipient] += amount;
+    }
+
+    function getProposalCount() public view returns (uint) {
+        return proposals.length;
+    }
+
+    function getTokenHolderCount() public view returns (uint) {
+        return tokenHolders.length;
+    }
+
+    function getTokenHolderAtIndex(uint index) public view returns (address) {
+        require(index < tokenHolders.length, "Index out of bounds.");
+        return tokenHolders[index];
     }
 }
