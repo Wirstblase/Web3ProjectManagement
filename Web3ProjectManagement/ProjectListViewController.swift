@@ -404,10 +404,10 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
             
             if(tableItemCount > BigUInt(0)){
                 
-                print("in loop")
+                //print("in loop")
                 
                 for i in stride(from: BigUInt(0), to: tableItemCount, by: 1){
-                    print("loops")
+                    //print("loops")
                     await loadTableData(index: i+1)
                 }
                 
@@ -434,6 +434,8 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
         cell.viewBg.layer.cornerRadius = 20
         cell.tokensLabel.text = "\(project.yourTokens)"
         
+        cell.selectionStyle = .none
+        
         return cell
     }
     
@@ -442,6 +444,7 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedContractStringGlobal = projects[indexPath.row].address
         performSegue(withIdentifier: "loadProjectFeedSegue", sender: self)
     }
 
