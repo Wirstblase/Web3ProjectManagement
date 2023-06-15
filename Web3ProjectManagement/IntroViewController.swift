@@ -18,8 +18,13 @@ class IntroViewController: UIViewController {
     
     @IBOutlet weak var privateKeyTextField: UITextField!
     
+    @IBOutlet weak var continueButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        continueButton.tintColor = colourThemeLight2
+        
 
         myAddressStringGlobal = publicAddressTextField.text!
         

@@ -12,6 +12,15 @@ import BigInt
 import Network
 import Foundation
 
+struct Proposal{
+    var description: String
+    var content: String
+    var executed: Bool
+    var currentVote: BigInt
+    var voteCount: BigUInt
+    var issuerAddress: EthereumAddress
+}
+
 class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     @IBOutlet weak var totalProposalsLabel: UILabel!
     
@@ -25,63 +34,11 @@ class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     var tokenHolderCount: BigUInt = 0
     
-    struct Proposal{
-        var description: String
-        var content: String
-        var executed: Bool
-        var currentVote: BigInt
-        var voteCount: BigUInt
-        var issuerAddress: EthereumAddress
-    }
+    var selectedProposalIndex: BigUInt = 99
+    
+    var selectedProposal:Proposal?
     
     var proposals = [Proposal]()
-    
-    func getDataFromSmartContract(contractAddress: EthereumAddress, urlString: String, abiFilename: String, contractFunctionToCallString: String, parameters: [Any] ) async -> [String:Any]{
-        do {
-
-            print("in get data from smart contract function")
-            
-            let url = URL(string: urlString)
-            
-            let provider = try await Web3HttpProvider(url: url!, network: Networks.Custom(networkID: 5777))
-            
-            let web3 = Web3(provider: provider)
-            
-            let path = Bundle.main.path(forResource: abiFilename, ofType: "txt")
-            
-            let abiString = try String(contentsOfFile: path!)
-            
-            let contract = web3.contract(abiString, at: contractAddress)
-            
-            let inputAddress = EthereumAddress(myAddressStringGlobal)
-            
-            let readOp = contract?.createReadOperation(contractFunctionToCallString, parameters: parameters)
-            
-            readOp?.transaction.from = EthereumAddress(myAddressStringGlobal)
-            
-            let gasPrice = BigUInt(integerLiteral: 1000000000)
-            var transaction = try readOp?.transaction
-            transaction?.gasPrice = gasPrice
-            
-            let response = try await readOp?.callContractMethod()
-            
-            //print("GET TOKEN CALL\(String(describing: response))")
-            
-            return response ?? ["error": "error"]
-            
-            /*if let item = response?["0"] {
-                //print("name for project with address \(projectAddress.address): \(item)")
-                //tableItemCount = item as! BigUInt
-                return item as! String
-            } else {
-                print("Item with key '0' not found")
-            }*/
-            
-        } catch {
-            print("error in main task function loadTableData: \(error)")
-        }
-        return ["error": "error"]
-    }
     
     func getProposalCount() async{
         
@@ -220,15 +177,6 @@ class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewD
         // Do any additional setup after loading the view.
     }
     
-    func UIColorFromRGB(rgbValue: UInt) -> UIColor {
-        return UIColor(
-            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
-            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
-            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
-            alpha: CGFloat(1.0)
-        )
-    }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "proposalCell", for: indexPath) as! proposalsTableViewCell
         
@@ -272,18 +220,29 @@ class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewD
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedProposal = proposals[indexPath.row]
+        
+        selectedProposalIndex = BigUInt(indexPath.row)
+        
         performSegue(withIdentifier: "openVoteSegue", sender: self)
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if(segue.identifier == "openVoteSegue"){
+            let destinationVC = segue.destination as! proposalViewController
+            destinationVC.selectedProposal = selectedProposal
+            
+            destinationVC.selectedProposalIndex = selectedProposalIndex
+        }
+        
     }
-    */
+    
 
 }

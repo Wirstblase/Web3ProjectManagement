@@ -26,6 +26,8 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
     
     @IBOutlet weak var userBackgroundView: UIView!
     
+    @IBOutlet weak var filterButton: UIButton!
+    
     var tableItemCount:BigUInt = BigUInt(0)
     
     struct projectData{
@@ -393,6 +395,7 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
         tableView.delegate = self
         tableView.dataSource = self
         
+        filterButton.tintColor = colourThemeLight2
         
         loadUsername()
         loadProfilePicture()
