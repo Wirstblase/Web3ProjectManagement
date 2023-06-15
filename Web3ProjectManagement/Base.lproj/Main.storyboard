@@ -749,10 +749,10 @@
             </objects>
             <point key="canvasLocation" x="1492.753623188406" y="1488.6160714285713"/>
         </scene>
-        <!--View Controller-->
+        <!--New Project View Controller-->
         <scene sceneID="sGh-UE-JZb">
             <objects>
-                <viewController id="nKn-DC-Nzy" sceneMemberID="viewController">
+                <viewController id="nKn-DC-Nzy" customClass="newProjectViewController" customModule="Web3ProjectManagement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RPm-JG-anW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

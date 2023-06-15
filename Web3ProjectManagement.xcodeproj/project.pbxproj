@@ -27,6 +27,7 @@
 		794AEBF02A38B990003A55C9 /* projectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AEBEF2A38B990003A55C9 /* projectViewController.swift */; };
 		7957D96C2A3A34CB0034AA4B /* proposalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7957D96B2A3A34CB0034AA4B /* proposalsViewController.swift */; };
 		7957D96E2A3A34F40034AA4B /* proposalsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7957D96D2A3A34F40034AA4B /* proposalsTableViewCell.swift */; };
+		79C44EEF2A3B70D300784CF9 /* newProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C44EEE2A3B70D300784CF9 /* newProjectViewController.swift */; };
 		79D503A32A3AA0D100A33ED7 /* proposalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D503A22A3AA0D100A33ED7 /* proposalViewController.swift */; };
 		79D503A62A3AB5D500A33ED7 /* customNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D503A42A3AB5D500A33ED7 /* customNavigationController.swift */; };
 		B96C19F640DF4508B724E753 /* Pods_Web3ProjectManagement_Web3ProjectManagementUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F4F26FDC33B381FA4C5708 /* Pods_Web3ProjectManagement_Web3ProjectManagementUITests.framework */; };
@@ -75,6 +76,7 @@
 		794AEBEF2A38B990003A55C9 /* projectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectViewController.swift; sourceTree = "<group>"; };
 		7957D96B2A3A34CB0034AA4B /* proposalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proposalsViewController.swift; sourceTree = "<group>"; };
 		7957D96D2A3A34F40034AA4B /* proposalsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proposalsTableViewCell.swift; sourceTree = "<group>"; };
+		79C44EEE2A3B70D300784CF9 /* newProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newProjectViewController.swift; sourceTree = "<group>"; };
 		79D503A22A3AA0D100A33ED7 /* proposalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proposalViewController.swift; sourceTree = "<group>"; };
 		79D503A42A3AB5D500A33ED7 /* customNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customNavigationController.swift; sourceTree = "<group>"; };
 		B2F4F26FDC33B381FA4C5708 /* Pods_Web3ProjectManagement_Web3ProjectManagementUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Web3ProjectManagement_Web3ProjectManagementUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +142,7 @@
 				794AEB6B2A379033003A55C9 /* SceneDelegate.swift */,
 				794AEB6D2A379033003A55C9 /* ViewController.swift */,
 				794AEB6F2A379033003A55C9 /* Main.storyboard */,
+				79C44EEE2A3B70D300784CF9 /* newProjectViewController.swift */,
 				79D503A42A3AB5D500A33ED7 /* customNavigationController.swift */,
 				79D503A22A3AA0D100A33ED7 /* proposalViewController.swift */,
 				7957D96D2A3A34F40034AA4B /* proposalsTableViewCell.swift */,
@@ -392,6 +395,7 @@
 			files = (
 				79D503A62A3AB5D500A33ED7 /* customNavigationController.swift in Sources */,
 				7957D96C2A3A34CB0034AA4B /* proposalsViewController.swift in Sources */,
+				79C44EEF2A3B70D300784CF9 /* newProjectViewController.swift in Sources */,
 				794AEB9F2A37C16C003A55C9 /* IntroViewController.swift in Sources */,
 				794AEB6E2A379033003A55C9 /* ViewController.swift in Sources */,
 				794AEBA12A37D181003A55C9 /* ProjectListViewController.swift in Sources */,

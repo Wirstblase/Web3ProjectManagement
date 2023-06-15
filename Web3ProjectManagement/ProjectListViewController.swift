@@ -417,8 +417,10 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
             }
             
         }
-        
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("IN VIEWWILLAPPEAR")
     }
     
     @IBAction func plusButtonPress(_ sender: Any) {
