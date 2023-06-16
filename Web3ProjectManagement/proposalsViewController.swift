@@ -22,7 +22,12 @@ struct Proposal{
 }
 
 class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
+    @IBOutlet weak var plusButtonView: UIView!
+    
     @IBOutlet weak var totalProposalsLabel: UILabel!
+    
+    @IBOutlet weak var progressView: UIProgressView!
     
     @IBOutlet weak var tokenOwnLabel: UILabel!
     
@@ -86,6 +91,7 @@ class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewD
             
             if let item = response["0"] {
                 tokenOwnLabel.text = "you own \(item) out of 100 tokens"
+                progressView.setProgress(mapValueToProgressBar(Float(item as! BigUInt)), animated: true)
             } else {
                 print("getProjectTokens: Item with key '0' not found")
                 tokenOwnLabel.text = "failed to fetch your token balance"
@@ -147,8 +153,18 @@ class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewD
         
     }
     
+    func mapValueToProgressBar(_ value: Float) -> Float {
+        let minValue: Float = 0.1
+        let maxValue: Float = 1.0
+        
+        let mappedValue = (maxValue - minValue) * (value / 100.0) + minValue
+        return mappedValue
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        progressView.setProgress(0, animated: false)
         
         getProjectName()
         getProjectTokens()
@@ -156,6 +172,8 @@ class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewD
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        plusButtonView.layer.cornerRadius = 30
         
         Task{
             
@@ -184,7 +202,11 @@ class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewD
         
         cell.proposalTitleLabel.text = proposal.description
         
-        if(tokenHolderCount > proposal.voteCount){
+        print("tokenHolderCount: \(tokenHolderCount), proposal.currentVote: \(proposal.currentVote)")
+        
+        //MARK: must fix
+        
+        if(tokenHolderCount > proposal.currentVote){
             if(proposal.executed == false){
                 cell.proposalStatusLabel.text = "pending.. \(proposal.voteCount)/\(tokenHolderCount) votes"
                 cell.bgView.backgroundColor = UIColorFromRGB(rgbValue: 0x9A8C98)
@@ -227,9 +249,6 @@ class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewD
         performSegue(withIdentifier: "openVoteSegue", sender: self)
     }
     
-
-    
-    // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

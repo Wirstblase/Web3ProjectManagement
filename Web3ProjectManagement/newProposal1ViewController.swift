@@ -1,21 +1,31 @@
 //
-//  projectViewController.swift
+//  newProposal1ViewController.swift
 //  Web3ProjectManagement
 //
-//  Created by Suflea Marius on 13.06.2023.
+//  Created by Suflea Marius on 16.06.2023.
 //
 
 import UIKit
 
-class projectViewController: UIViewController {
+class newProposal1ViewController: UIViewController {
 
+    @IBOutlet weak var proposalTitleTextField: UITextField!
+    
+    @IBOutlet weak var nextStepButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func nextStepPress(_ sender: Any) {
+        
+        newProposalTitleGlobal = proposalTitleTextField.text!
+        
+        performSegue(withIdentifier: "proposalStep2Segue", sender: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

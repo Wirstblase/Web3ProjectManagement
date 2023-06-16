@@ -51,14 +51,90 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
         
     }
     
-    func submitVote(voteValue: Bool){
+    func loadBalance(){
         
-        //TODO: ADD FUNCTIONALITY
+        Task {
+            do {
+                
+                
+                let formattedValue = await getBalanceStringFormatted(inputAddress: EthereumAddress(myAddressStringGlobal)!, urlString: web3GlobalAddress)
+                
+                balanceLabel.text = "your balance: \(formattedValue)"
+                
+                
+                
+            } catch {
+                print("error: \(error)")
+            }
+        }
+        
+    }
+    
+    func createTransaction() async -> CodableTransaction{
+        
+        
+        print("createTransaction called")
+
+        do {
+            let url = URL(string: "http://127.0.0.1:7545")
+            let provider = try await Web3HttpProvider(url: url!, network: Networks.Custom(networkID: 5777))
+            let web3 = Web3(provider: provider)
+            let contractAddress = EthereumAddress(selectedContractStringGlobal)
+            let path = Bundle.main.path(forResource: "projectContractABI", ofType: "txt")
+            let abiString = try String(contentsOfFile: path!)
+            let contract = web3.contract(abiString, at: contractAddress)
+
+            let privateKeyData = Data(hex: myPrivateKeyStringGlobal)
+            let keystore = try EthereumKeystoreV3(privateKey: privateKeyData, password: "web3swift")
+            let keystoreManager = KeystoreManager([keystore!])
+            web3.addKeystoreManager(keystoreManager)
+
+            //let parameters: [AnyObject] = [selectedProposalIndex! as AnyObject,voteValue as AnyObject]
+            
+            let writeTx = contract?.createWriteOperation("vote", parameters: [selectedProposalIndex,voteValue], extraData: Data())
+            
+            var transaction = try writeTx!.transaction
+            
+            transaction.gasLimit = try await web3.eth.estimateGas(for: transaction)
+            transaction.gasPrice = try await web3.eth.gasPrice()
+            transaction.from = EthereumAddress(myAddressStringGlobal)
+            transaction.nonce = try await web3.eth.getTransactionCount(for: EthereumAddress(myAddressStringGlobal)!)
+            
+            
+            print("gas limit: \(try await web3.eth.estimateGas(for: transaction))")
+            print("gas price: \(try await web3.eth.gasPrice())")
+
+            //print("createTransaction: \(transaction)")
+            return transaction
+        } catch {
+            print("error in createTransaction: \(error)")
+        }
+        return "error" as! CodableTransaction//error handling handled in caller
+    }
+    
+    func submitVote(voteValue: Bool) async{
+        
+        do{
+            let url = URL(string: "http://127.0.0.1:7545")
+            let provider = try await Web3HttpProvider(url: url!, network: Networks.Custom(networkID: 5777))
+            let web3 = Web3(provider: provider)
+            let transaction = try await createTransaction()
+            let result = try await web3.eth.send(transaction)
+            
+            submitButton.isEnabled = false
+            balanceLabel.text = "vote sent successfully!"
+
+        print("submitVote result: \(result)")
+    } catch {
+        print("error in submitVote:: \(error)")
+    }
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadBalance()
         
         noButton.tintColor = colourVoteRed
         yesButton.tintColor = colourVoteGreen
@@ -144,8 +220,9 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
         
         submitButton.tintColor = colourThemeLight2
         submitButton.setTitle("submitting...", for: .normal)
-        
-        submitVote(voteValue: voteValue)
+        Task{
+            await submitVote(voteValue: voteValue)
+        }
     }
     
 

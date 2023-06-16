@@ -1,0 +1,1600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9B16CC1F-3408-46E8-ABB7-7337DE7BDA49"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DFBE0708-3E95-4146-9531-0C3BF34C86CC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Web3ProjectManagement/newProposal3ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "createTransaction()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DFBE0708-3E95-4146-9531-0C3BF34C86CC - 9d1bf6c69d610a4a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(9) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "494">
+               </Location>
+               <Location
+                  uuid = "DFBE0708-3E95-4146-9531-0C3BF34C86CC - bd8a06364334464c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "483">
+               </Location>
+               <Location
+                  uuid = "DFBE0708-3E95-4146-9531-0C3BF34C86CC - bd8a06364334464c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "581">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FE124E42-EE64-46BC-996A-A36EFDDA33B4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Web3ProjectManagement/newProposal3ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "createTransaction()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FE124E42-EE64-46BC-996A-A36EFDDA33B4 - bd8a06364334466b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "426">
+               </Location>
+               <Location
+                  uuid = "FE124E42-EE64-46BC-996A-A36EFDDA33B4 - eec5d6b6f3965b3f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(8) await resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "62">
+               </Location>
+               <Location
+                  uuid = "FE124E42-EE64-46BC-996A-A36EFDDA33B4 - 9d1bf6c69d610a6d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(9) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "338">
+               </Location>
+               <Location
+                  uuid = "FE124E42-EE64-46BC-996A-A36EFDDA33B4 - f3e8ce85e015ba2b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(19) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "503">
+               </Location>
+               <Location
+                  uuid = "FE124E42-EE64-46BC-996A-A36EFDDA33B4 - bd8a06364334462d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "502">
+               </Location>
+               <Location
+                  uuid = "FE124E42-EE64-46BC-996A-A36EFDDA33B4 - eec5d6b6f3965b79"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(8) await resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "62">
+               </Location>
+               <Location
+                  uuid = "FE124E42-EE64-46BC-996A-A36EFDDA33B4 - 9d1bf6c69d610a2b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(9) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "338">
+               </Location>
+               <Location
+                  uuid = "FE124E42-EE64-46BC-996A-A36EFDDA33B4 - f3e8ce85e015ba6d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(19) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "520">
+               </Location>
+               <Location
+                  uuid = "FE124E42-EE64-46BC-996A-A36EFDDA33B4 - bd8a06364334462d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "625">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1D9BC4B6-E1DE-45EA-9820-B0C05C72EBC3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Web3ProjectManagement/newProposal3ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "createTransaction()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1D9BC4B6-E1DE-45EA-9820-B0C05C72EBC3 - 9d1bf6c69d610a4a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(9) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "494">
+               </Location>
+               <Location
+                  uuid = "1D9BC4B6-E1DE-45EA-9820-B0C05C72EBC3 - 9d1bf6c69d610a08"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(9) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "494">
+               </Location>
+               <Location
+                  uuid = "1D9BC4B6-E1DE-45EA-9820-B0C05C72EBC3 - bd8a06364334460e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "640">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4EC19016-2FA5-430C-8F9A-34DD9C8C12D0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Web3ProjectManagement/newProposal3ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "createTransaction()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4EC19016-2FA5-430C-8F9A-34DD9C8C12D0 - 9d1bf6c69d610a2b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(9) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "669">
+               </Location>
+               <Location
+                  uuid = "4EC19016-2FA5-430C-8F9A-34DD9C8C12D0 - 4147c4ef40aa24be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(10) await resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "62">
+               </Location>
+               <Location
+                  uuid = "4EC19016-2FA5-430C-8F9A-34DD9C8C12D0 - f57edd224a40a275"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(11) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "294">
+               </Location>
+               <Location
+                  uuid = "4EC19016-2FA5-430C-8F9A-34DD9C8C12D0 - 203cc9cc8c9fa175"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(20) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "304">
+               </Location>
+               <Location
+                  uuid = "4EC19016-2FA5-430C-8F9A-34DD9C8C12D0 - 9d1bf6c69d610ae9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(9) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "669">
+               </Location>
+               <Location
+                  uuid = "4EC19016-2FA5-430C-8F9A-34DD9C8C12D0 - 4147c4ef40aa247c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(10) await resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "62">
+               </Location>
+               <Location
+                  uuid = "4EC19016-2FA5-430C-8F9A-34DD9C8C12D0 - f57edd224a40a2b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(11) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "294">
+               </Location>
+               <Location
+                  uuid = "4EC19016-2FA5-430C-8F9A-34DD9C8C12D0 - 203cc9cc8c9fa1b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(20) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "321">
+               </Location>
+               <Location
+                  uuid = "4EC19016-2FA5-430C-8F9A-34DD9C8C12D0 - bd8a0636433446ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "815">
+               </Location>
+               <Location
+                  uuid = "4EC19016-2FA5-430C-8F9A-34DD9C8C12D0 - eec5d6b6f3965bbb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(8) await resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "62">
+               </Location>
+               <Location
+                  uuid = "4EC19016-2FA5-430C-8F9A-34DD9C8C12D0 - 9d1bf6c69d610ae9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(9) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "294">
+               </Location>
+               <Location
+                  uuid = "4EC19016-2FA5-430C-8F9A-34DD9C8C12D0 - 320e497cca9ef4ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(17) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "321">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E7D1A13F-69B1-4AF2-A64D-131C6D60E640"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Web3ProjectManagement/newProposal3ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "createTransaction()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E7D1A13F-69B1-4AF2-A64D-131C6D60E640 - f57edd224a40a298"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(11) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "459">
+               </Location>
+               <Location
+                  uuid = "E7D1A13F-69B1-4AF2-A64D-131C6D60E640 - edfeb031afdbea51"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(12) await resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "62">
+               </Location>
+               <Location
+                  uuid = "E7D1A13F-69B1-4AF2-A64D-131C6D60E640 - b6db414b67f4689e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(13) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "309">
+               </Location>
+               <Location
+                  uuid = "E7D1A13F-69B1-4AF2-A64D-131C6D60E640 - c0ea0bc13759c499"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(21) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "534">
+               </Location>
+               <Location
+                  uuid = "E7D1A13F-69B1-4AF2-A64D-131C6D60E640 - f57edd224a40a2da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(11) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "459">
+               </Location>
+               <Location
+                  uuid = "E7D1A13F-69B1-4AF2-A64D-131C6D60E640 - edfeb031afdbea13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(12) await resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "62">
+               </Location>
+               <Location
+                  uuid = "E7D1A13F-69B1-4AF2-A64D-131C6D60E640 - b6db414b67f468dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(13) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "309">
+               </Location>
+               <Location
+                  uuid = "E7D1A13F-69B1-4AF2-A64D-131C6D60E640 - c0ea0bc13759c4db"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(21) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "551">
+               </Location>
+               <Location
+                  uuid = "E7D1A13F-69B1-4AF2-A64D-131C6D60E640 - 9d1bf6c69d610a84"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(9) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "459">
+               </Location>
+               <Location
+                  uuid = "E7D1A13F-69B1-4AF2-A64D-131C6D60E640 - 4147c4ef40aa2411"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(10) await resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "62">
+               </Location>
+               <Location
+                  uuid = "E7D1A13F-69B1-4AF2-A64D-131C6D60E640 - f57edd224a40a2da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(11) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "309">
+               </Location>
+               <Location
+                  uuid = "E7D1A13F-69B1-4AF2-A64D-131C6D60E640 - d33d8b717d5817c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(18) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "551">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DDC56DDA-E8B4-4627-A9F3-C0AC074EA4B2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Web3ProjectManagement/newProposal3ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "createTransaction()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DDC56DDA-E8B4-4627-A9F3-C0AC074EA4B2 - b6db414b67f468ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(13) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "882">
+               </Location>
+               <Location
+                  uuid = "DDC56DDA-E8B4-4627-A9F3-C0AC074EA4B2 - 1a397d941748b036"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(14) await resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "62">
+               </Location>
+               <Location
+                  uuid = "DDC56DDA-E8B4-4627-A9F3-C0AC074EA4B2 - 70b5c553bd6b2efd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(15) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "276">
+               </Location>
+               <Location
+                  uuid = "DDC56DDA-E8B4-4627-A9F3-C0AC074EA4B2 - e1994dd5da1367ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(22) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "517">
+               </Location>
+               <Location
+                  uuid = "DDC56DDA-E8B4-4627-A9F3-C0AC074EA4B2 - b6db414b67f4693d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(13) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "882">
+               </Location>
+               <Location
+                  uuid = "DDC56DDA-E8B4-4627-A9F3-C0AC074EA4B2 - 1a397d941748b1f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(14) await resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "62">
+               </Location>
+               <Location
+                  uuid = "DDC56DDA-E8B4-4627-A9F3-C0AC074EA4B2 - 70b5c553bd6b2f3f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(15) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "292">
+               </Location>
+               <Location
+                  uuid = "DDC56DDA-E8B4-4627-A9F3-C0AC074EA4B2 - e1994dd5da13663d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(22) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "534">
+               </Location>
+               <Location
+                  uuid = "DDC56DDA-E8B4-4627-A9F3-C0AC074EA4B2 - f57edd224a40a33b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(11) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "882">
+               </Location>
+               <Location
+                  uuid = "DDC56DDA-E8B4-4627-A9F3-C0AC074EA4B2 - edfeb031afdbebf2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(12) await resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "62">
+               </Location>
+               <Location
+                  uuid = "DDC56DDA-E8B4-4627-A9F3-C0AC074EA4B2 - b6db414b67f4693d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(13) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "292">
+               </Location>
+               <Location
+                  uuid = "DDC56DDA-E8B4-4627-A9F3-C0AC074EA4B2 - f3e8ce85e015bb23"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(19) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "534">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "77C13839-AD97-4A9B-8C4D-7F6DF3C214B3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Web3ProjectManagement/newProposal3ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "createTransaction()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "77C13839-AD97-4A9B-8C4D-7F6DF3C214B3 - 70b5c553bd6b2f18"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(15) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "992">
+               </Location>
+               <Location
+                  uuid = "77C13839-AD97-4A9B-8C4D-7F6DF3C214B3 - b6db414b67f46958"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(13) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "1008">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "31F4108E-0A2A-41CC-AA8A-82C99D7A1492"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Web3ProjectManagement/newProposal3ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "createTransaction()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "31F4108E-0A2A-41CC-AA8A-82C99D7A1492 - 5e7a57a530ca8188"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "2095">
+               </Location>
+               <Location
+                  uuid = "31F4108E-0A2A-41CC-AA8A-82C99D7A1492 - 56b7fffbbb194dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) await resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "62">
+               </Location>
+               <Location
+                  uuid = "31F4108E-0A2A-41CC-AA8A-82C99D7A1492 - bd8a06364334458a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "278">
+               </Location>
+               <Location
+                  uuid = "31F4108E-0A2A-41CC-AA8A-82C99D7A1492 - d33d8b717d5814c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(18) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "486">
+               </Location>
+               <Location
+                  uuid = "31F4108E-0A2A-41CC-AA8A-82C99D7A1492 - 5e7a57a530ca8188"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for Web3ProjectManagement.newProposal3ViewController.createTransaction() async -&gt; Web3Core.CodableTransaction"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/newProposal3ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "2105">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "60EB43A1-A5E8-4C67-9028-7926888EAEC6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Web3ProjectManagement/projectMembersViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "getUsers()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D5B7C46-0A7F-41E1-9899-B6967F8ED0E8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Web3ProjectManagement/projectMembersViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "getUsers()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6D5B7C46-0A7F-41E1-9899-B6967F8ED0E8 - f39c8792b598785d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(8) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "206">
+               </Location>
+               <Location
+                  uuid = "6D5B7C46-0A7F-41E1-9899-B6967F8ED0E8 - 7c98f0271f1f395e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(9) await resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "43">
+               </Location>
+               <Location
+                  uuid = "6D5B7C46-0A7F-41E1-9899-B6967F8ED0E8 - cca6021fb27cda8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(10) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "229">
+               </Location>
+               <Location
+                  uuid = "6D5B7C46-0A7F-41E1-9899-B6967F8ED0E8 - cca6021fb27cda29"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(10) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "373">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD2A629A-59B7-438C-B664-411F2A019959"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Web3ProjectManagement/projectMembersViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "getUsers()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CD2A629A-59B7-438C-B664-411F2A019959 - 94b562d0ffa93cb8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "CD2A629A-59B7-438C-B664-411F2A019959 - 192759e93527fd87"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) await resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "43">
+               </Location>
+               <Location
+                  uuid = "CD2A629A-59B7-438C-B664-411F2A019959 - f39c8792b59878f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(8) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "CD2A629A-59B7-438C-B664-411F2A019959 - f39c8792b59878ba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(8) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "121">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EE3ABE18-2A1F-4372-BC4A-333B81448751"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Web3ProjectManagement/projectMembersViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "getUsers()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EE3ABE18-2A1F-4372-BC4A-333B81448751 - bdebfe112177f0a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "173">
+               </Location>
+               <Location
+                  uuid = "EE3ABE18-2A1F-4372-BC4A-333B81448751 - 35b303932cceb1a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) await resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "43">
+               </Location>
+               <Location
+                  uuid = "EE3ABE18-2A1F-4372-BC4A-333B81448751 - 94b562d0ffa93cfa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "EE3ABE18-2A1F-4372-BC4A-333B81448751 - 94b562d0ffa93c99"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "95">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "879FDE1C-0F2B-4083-8FA0-A5861C488E36"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Web3ProjectManagement/projectMembersViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "getUsers()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4632BD08-C75B-4E72-AB8C-DDD3D1C6D5B2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Web3ProjectManagement/projectMembersViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "getUsers()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4632BD08-C75B-4E72-AB8C-DDD3D1C6D5B2 - cca6021fb27cd984"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(10) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "733">
+               </Location>
+               <Location
+                  uuid = "4632BD08-C75B-4E72-AB8C-DDD3D1C6D5B2 - cca6021fb27cd9c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(10) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "733">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "93BDF587-0744-4EBA-9D7F-F5279BFC4CE4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Web3ProjectManagement/projectMembersViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "getUsers()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "93BDF587-0744-4EBA-9D7F-F5279BFC4CE4 - cca6021fb27cd9e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(10) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "1197">
+               </Location>
+               <Location
+                  uuid = "93BDF587-0744-4EBA-9D7F-F5279BFC4CE4 - cca6021fb27cd9c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(10) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "733">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1B4F01B-3B98-4459-B44B-5331E3142C08"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Web3ProjectManagement/projectMembersViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "getUsers()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D1B4F01B-3B98-4459-B44B-5331E3142C08 - 460059576b04b4c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "1085">
+               </Location>
+               <Location
+                  uuid = "D1B4F01B-3B98-4459-B44B-5331E3142C08 - d25fed455a9975c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) await resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "47">
+               </Location>
+               <Location
+                  uuid = "D1B4F01B-3B98-4459-B44B-5331E3142C08 - bdebfe112177f0c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  uuid = "D1B4F01B-3B98-4459-B44B-5331E3142C08 - 94b562d0ffa93cfa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "D1B4F01B-3B98-4459-B44B-5331E3142C08 - f39c8792b59878f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(8) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "D1B4F01B-3B98-4459-B44B-5331E3142C08 - cca6021fb27cda8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(10) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "229">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D24797D-1BF4-4E4B-8B76-553489C010AA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Web3ProjectManagement/projectMembersViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "getUsers()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9D24797D-1BF4-4E4B-8B76-553489C010AA - 460059576b04b4c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "1085">
+               </Location>
+               <Location
+                  uuid = "9D24797D-1BF4-4E4B-8B76-553489C010AA - d25fed455a9975c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) await resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "47">
+               </Location>
+               <Location
+                  uuid = "9D24797D-1BF4-4E4B-8B76-553489C010AA - bdebfe112177f0c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  uuid = "9D24797D-1BF4-4E4B-8B76-553489C010AA - 94b562d0ffa93cfa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "9D24797D-1BF4-4E4B-8B76-553489C010AA - f39c8792b59878f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(8) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "9D24797D-1BF4-4E4B-8B76-553489C010AA - cca6021fb27cda8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(10) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Web3ProjectManagement.projectMembersViewController.getUsers() -&gt; ()"
+                  moduleName = "Web3ProjectManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariussuflea/Documents/faculta/an%203/LICENTA/Web3ProjectManagement/Web3ProjectManagement/projectMembersViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "229">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

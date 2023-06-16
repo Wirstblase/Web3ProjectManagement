@@ -12,7 +12,8 @@ import BigInt
 import Network
 import Foundation
 
-class ProjectListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ProjectListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, newProjectViewControllerDelegate {
+    
     
     @IBOutlet weak var userBalanceLabel: UILabel!
     
@@ -357,23 +358,9 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
         Task {
             do {
                 
-                let url = URL(string: "http://127.0.0.1:7545")
                 
-                let provider = try await Web3HttpProvider(url: url!, network: Networks.Custom(networkID: 5777))
+                let formattedValue = await getBalanceStringFormatted(inputAddress: EthereumAddress(myAddressStringGlobal)!, urlString: web3GlobalAddress)
                 
-                let web3 = Web3(provider: provider)
-                
-               
-                let inputAddress = EthereumAddress(myAddressStringGlobal)
-                
-                let balanceResult = try await web3.eth.getBalance(for: inputAddress!)
-                
-                let divisor: Double = 1000000000000000000 // The divisor to achieve the desired decimal places
-
-                var formattedValue = String(format: "%.2f", Double(balanceResult) / divisor)
-                formattedValue = "\(formattedValue) ETH"
-                //if let balance = balanceResult{
-                //print("balance: \(formattedValue)")
                 userBalanceLabel.text = formattedValue
                 
                 
@@ -419,10 +406,6 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        print("IN VIEWWILLAPPEAR")
-    }
-    
     @IBAction func plusButtonPress(_ sender: Any) {
     }
     
@@ -453,14 +436,23 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
         performSegue(withIdentifier: "loadProjectFeedSegue", sender: self)
     }
 
-    /*
-    // MARK: - Navigation
-
+   
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if let newProjectViewController = segue.destination as? newProjectViewController{
+            newProjectViewController.delegate = self
+        }
+        
     }
-    */
+    
+    func didFinishNewProjectViewController() {
+        print("new project view controller DISMISSED")
+        //MARK: implement
+    }
+    
+    
 
 }
+
