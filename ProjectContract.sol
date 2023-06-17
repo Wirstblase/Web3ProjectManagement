@@ -12,10 +12,11 @@ contract ProjectContract {
     // A struct for proposals
     struct Proposal {
         string description;
-        string content; // <-- Add this line
+        string content; 
         bool executed;
         int currentVote;
         uint voteCount;
+        uint totalVoters; 
         mapping (address => bool) voters;
     }
 
@@ -37,10 +38,11 @@ contract ProjectContract {
         Proposal storage newProposal = proposals[proposals.length - 1];
 
         newProposal.description = description;
-        newProposal.content = content; // <-- Add this line
+        newProposal.content = content; 
         newProposal.executed = false;
         newProposal.currentVote = 0;
         newProposal.voteCount = 0;
+        newProposal.totalVoters = 0; // <-- Initialize totalVoters to 0
     }
 
     function vote(uint proposalIndex, bool support) public {
@@ -52,6 +54,7 @@ contract ProjectContract {
 
         proposal.voters[msg.sender] = true;
         proposal.voteCount += balances[msg.sender];
+        proposal.totalVoters += 1; // <-- Increment totalVoters when a new vote is cast
 
         if (support) {
             proposal.currentVote += int(balances[msg.sender]);
