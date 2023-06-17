@@ -17,6 +17,7 @@ contract ProjectContract {
         int currentVote;
         uint voteCount;
         uint totalVoters; 
+        address proposer; // <-- Added this
         mapping (address => bool) voters;
     }
 
@@ -32,7 +33,7 @@ contract ProjectContract {
         tokenHolders.push(projectOwner);
     }
 
-    function propose(string memory description, string memory content) public { // <-- Add the new parameter here
+    function propose(string memory description, string memory content) public { 
         proposals.push();
 
         Proposal storage newProposal = proposals[proposals.length - 1];
@@ -42,7 +43,8 @@ contract ProjectContract {
         newProposal.executed = false;
         newProposal.currentVote = 0;
         newProposal.voteCount = 0;
-        newProposal.totalVoters = 0; // <-- Initialize totalVoters to 0
+        newProposal.totalVoters = 0; 
+        newProposal.proposer = msg.sender; // <-- Set the proposer to the sender of the transaction
     }
 
     function vote(uint proposalIndex, bool support) public {
