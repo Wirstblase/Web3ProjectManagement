@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79186AC32A3DFEA9000DDC74 /* importProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79186AC22A3DFEA9000DDC74 /* importProjectViewController.swift */; };
 		794AEB6A2A379033003A55C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AEB692A379033003A55C9 /* AppDelegate.swift */; };
 		794AEB6C2A379033003A55C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AEB6B2A379033003A55C9 /* SceneDelegate.swift */; };
 		794AEB6E2A379033003A55C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AEB6D2A379033003A55C9 /* ViewController.swift */; };
@@ -57,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		4FB239D8EC40823725E3920E /* Pods_Web3ProjectManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Web3ProjectManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79186AC22A3DFEA9000DDC74 /* importProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = importProjectViewController.swift; sourceTree = "<group>"; };
 		794AEB662A379033003A55C9 /* Web3ProjectManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Web3ProjectManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		794AEB692A379033003A55C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		794AEB6B2A379033003A55C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				794AEB6B2A379033003A55C9 /* SceneDelegate.swift */,
 				794AEB6D2A379033003A55C9 /* ViewController.swift */,
 				794AEB6F2A379033003A55C9 /* Main.storyboard */,
+				79186AC22A3DFEA9000DDC74 /* importProjectViewController.swift */,
 				79E9CD172A3BEE7C005EB563 /* projectMembersTableViewCell.swift */,
 				79E9CD152A3BEE26005EB563 /* projectMembersViewController.swift */,
 				79E9CD0F2A3BC3A6005EB563 /* newProposal1ViewController.swift */,
@@ -422,6 +425,7 @@
 				794AEBA32A37DD18003A55C9 /* projectListTableViewCell.swift in Sources */,
 				79E9CD102A3BC3A6005EB563 /* newProposal1ViewController.swift in Sources */,
 				794AEB742A379033003A55C9 /* Web3ProjectManagement.xcdatamodeld in Sources */,
+				79186AC32A3DFEA9000DDC74 /* importProjectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

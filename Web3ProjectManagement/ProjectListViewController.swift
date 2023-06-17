@@ -14,6 +14,7 @@ import Foundation
 
 class ProjectListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, newProjectViewControllerDelegate {
     
+    @IBOutlet weak var importButton: UIButton!
     
     @IBOutlet weak var userBalanceLabel: UILabel!
     
@@ -383,6 +384,7 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
         tableView.dataSource = self
         
         filterButton.tintColor = colourThemeLight2
+        importButton.tintColor = colourThemeLight2
         
         loadUsername()
         loadProfilePicture()

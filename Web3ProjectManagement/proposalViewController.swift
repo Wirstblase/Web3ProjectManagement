@@ -17,6 +17,8 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
     
     @IBOutlet weak var textViewSmall: UITextView!
     
+    var tokenHolderCount:BigUInt = 0
+    
     var successfullySubmitted = false
     
     var selectedProposal: Proposal?
@@ -149,7 +151,7 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
             
             if(content.hasPrefix("<!Doctype html>")){
                 
-                if(selectedProposal?.executed == true){
+                if(selectedProposal?.executed == true || selectedProposal?.totalVoters == tokenHolderCount){
                     
                     webViewBig.isUserInteractionEnabled = true
                     webViewBig.isHidden = false
@@ -176,7 +178,7 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
                     webViewBig.isUserInteractionEnabled = false
                     webViewSmall.isUserInteractionEnabled = false
                     
-                    if(selectedProposal?.executed == true) {
+                    if(selectedProposal?.executed == true || selectedProposal?.totalVoters == tokenHolderCount) {
                         bottomView.isHidden = true
                         bottomView.isUserInteractionEnabled = false
                     }
@@ -196,6 +198,18 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
         
         if(successfullySubmitted == true){
             costLabel.text = "vote submitted!"
+        }
+    }
+    
+    @IBAction func estimateButtonPress(_ sender: Any) {
+        Task{
+            let transaction = await createTransaction()
+            
+            let gasLimit = transaction.gasLimit //bigUInt
+            
+            var formattedValue = formatEthereumBalance(gasLimit)
+            
+            costLabel.text = "estimated gas fee: \(formattedValue) ETH"
         }
     }
     
@@ -222,6 +236,7 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
         submitButton.setTitle("submitting...", for: .normal)
         Task{
             await submitVote(voteValue: voteValue)
+            submitButton.setTitle("done", for: .normal)
         }
     }
     

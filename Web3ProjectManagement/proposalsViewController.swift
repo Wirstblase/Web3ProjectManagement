@@ -19,6 +19,7 @@ struct Proposal{
     var currentVote: BigInt
     var voteCount: BigUInt
     var issuerAddress: EthereumAddress
+    var totalVoters: BigUInt
 }
 
 class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
@@ -62,6 +63,23 @@ class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewD
                 print("getProposalCount: Item with key '0' not found")
                 totalProposalsLabel.text = "proposals:"
             }
+        
+    }
+    
+    func getUserNameForAddress(inputAddress: EthereumAddress) async -> String {
+        let response = await getDataFromSmartContract(contractAddress: EthereumAddress(mainContractStringGlobal)!, urlString: "http://127.0.0.1:7545", abiFilename: "userManagerABI", contractFunctionToCallString: "getUsername", parameters: [inputAddress])
+        
+        print("getUsername: \(response)")
+        
+        if let item = response["0"] {
+            
+            return item as! String
+            
+        } else {
+            print("getUsername: Item with key '0' not found")
+            return "error"
+        }
+        
         
     }
     
@@ -121,7 +139,7 @@ class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewD
         
         let response = await getDataFromSmartContract(contractAddress: EthereumAddress(selectedContractStringGlobal)!, urlString: "http://127.0.0.1:7545", abiFilename: "projectContractABI", contractFunctionToCallString: "proposals", parameters: [index-BigUInt(1)])
             
-            print("response: \(response), index: \(index-BigUInt(1))")
+            //print("response: \(response), index: \(index-BigUInt(1))")
             
             /*
              response: ["1": "I propose internet freedom >:(", "description": "Internet freedom", "_success": true, "executed": false, "2": false, "4": 0, "3": 0, "content": "I propose internet freedom >:(", "currentVote": 0, "voteCount": 0, "0": "Internet freedom"], index: 0
@@ -137,11 +155,12 @@ class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewD
             let success = response["2"] as! Bool
             let currentVote = response["3"] as! BigInt
             let voteCount = response["4"] as! BigUInt
-            let issuerAddress = EthereumAddress(myAddressStringGlobal)! //response["5"] as! EthereumAddress //TODO: implement this in smart contract
+            let totalVoters = response["5"] as! BigUInt
+            let issuerAddress = response["6"] as! EthereumAddress
         
-            print("loadTableData: description: \(description), success: \(success), currentVote: \(currentVote), voteCount: \(voteCount)")
+        print("loadTableData: description: \(description), success: \(success), currentVote: \(currentVote), voteCount: \(voteCount), totalVoters: \(totalVoters)")
             
-        let proposal:Proposal = Proposal(description: description, content: "", executed: success, currentVote: currentVote, voteCount: voteCount, issuerAddress: issuerAddress)
+        let proposal:Proposal = Proposal(description: description, content: "", executed: success, currentVote: currentVote, voteCount: voteCount, issuerAddress: issuerAddress, totalVoters: totalVoters)
         
             proposals.append(proposal)
         let newIndexPath = IndexPath(row: proposals.count-1, section: 0)
@@ -204,15 +223,19 @@ class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewD
         
         print("tokenHolderCount: \(tokenHolderCount), proposal.currentVote: \(proposal.currentVote)")
         
-        //MARK: must fix
+        cell.proposalIssuerAddressLabel.text = proposal.issuerAddress.address
         
-        if(tokenHolderCount > proposal.currentVote){
+        Task{
+            cell.proposalIssuerNameLabel.text = await getUserNameForAddress(inputAddress: proposal.issuerAddress)
+        }
+        
+        if(tokenHolderCount > proposal.totalVoters){
             if(proposal.executed == false){
-                cell.proposalStatusLabel.text = "pending.. \(proposal.voteCount)/\(tokenHolderCount) votes"
+                cell.proposalStatusLabel.text = "pending.. \(proposal.totalVoters)/\(tokenHolderCount) votes"
                 cell.bgView.backgroundColor = UIColorFromRGB(rgbValue: 0x9A8C98)
                 
             }
-        } else if(tokenHolderCount == proposal.voteCount){
+        } else if(tokenHolderCount == proposal.totalVoters){
             if(proposal.executed == true){
                 cell.proposalStatusLabel.text = "approved"
                 cell.bgView.backgroundColor = UIColorFromRGB(rgbValue: 0x1f8038)
@@ -221,9 +244,6 @@ class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewD
                 cell.bgView.backgroundColor = UIColorFromRGB(rgbValue: 0x80201f)
             }
         }
-        
-        cell.proposalIssuerAddressLabel.text = ""
-        cell.proposalIssuerNameLabel.text = ""
         
         cell.bgView.layer.cornerRadius = 20
         cell.fgView.layer.cornerRadius = 20
@@ -238,7 +258,7 @@ class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewD
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 190
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -259,6 +279,8 @@ class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewD
             destinationVC.selectedProposal = selectedProposal
             
             destinationVC.selectedProposalIndex = selectedProposalIndex
+            
+            destinationVC.tokenHolderCount = tokenHolderCount
         }
         
     }
