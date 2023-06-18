@@ -27,6 +27,10 @@
 		794AEBEE2A3809CA003A55C9 /* userManagerABI.txt in Resources */ = {isa = PBXBuildFile; fileRef = 794AEBED2A3809CA003A55C9 /* userManagerABI.txt */; };
 		7957D96C2A3A34CB0034AA4B /* proposalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7957D96B2A3A34CB0034AA4B /* proposalsViewController.swift */; };
 		7957D96E2A3A34F40034AA4B /* proposalsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7957D96D2A3A34F40034AA4B /* proposalsTableViewCell.swift */; };
+		799F84522A3F792A00B431D3 /* editProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F84512A3F792A00B431D3 /* editProfileViewController.swift */; };
+		799F84542A3F9F1B00B431D3 /* selectedUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F84532A3F9F1B00B431D3 /* selectedUserViewController.swift */; };
+		799F84562A3F9F4000B431D3 /* addUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F84552A3F9F4000B431D3 /* addUserViewController.swift */; };
+		799F84582A3F9F5F00B431D3 /* transferTokensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F84572A3F9F5F00B431D3 /* transferTokensViewController.swift */; };
 		79C44EEF2A3B70D300784CF9 /* newProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C44EEE2A3B70D300784CF9 /* newProjectViewController.swift */; };
 		79D503A32A3AA0D100A33ED7 /* proposalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D503A22A3AA0D100A33ED7 /* proposalViewController.swift */; };
 		79D503A62A3AB5D500A33ED7 /* customNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D503A42A3AB5D500A33ED7 /* customNavigationController.swift */; };
@@ -81,6 +85,10 @@
 		794AEBED2A3809CA003A55C9 /* userManagerABI.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = userManagerABI.txt; sourceTree = "<group>"; };
 		7957D96B2A3A34CB0034AA4B /* proposalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proposalsViewController.swift; sourceTree = "<group>"; };
 		7957D96D2A3A34F40034AA4B /* proposalsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proposalsTableViewCell.swift; sourceTree = "<group>"; };
+		799F84512A3F792A00B431D3 /* editProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editProfileViewController.swift; sourceTree = "<group>"; };
+		799F84532A3F9F1B00B431D3 /* selectedUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectedUserViewController.swift; sourceTree = "<group>"; };
+		799F84552A3F9F4000B431D3 /* addUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addUserViewController.swift; sourceTree = "<group>"; };
+		799F84572A3F9F5F00B431D3 /* transferTokensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transferTokensViewController.swift; sourceTree = "<group>"; };
 		79C44EEE2A3B70D300784CF9 /* newProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newProjectViewController.swift; sourceTree = "<group>"; };
 		79D503A22A3AA0D100A33ED7 /* proposalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proposalViewController.swift; sourceTree = "<group>"; };
 		79D503A42A3AB5D500A33ED7 /* customNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customNavigationController.swift; sourceTree = "<group>"; };
@@ -152,6 +160,10 @@
 				794AEB6B2A379033003A55C9 /* SceneDelegate.swift */,
 				794AEB6D2A379033003A55C9 /* ViewController.swift */,
 				794AEB6F2A379033003A55C9 /* Main.storyboard */,
+				799F84572A3F9F5F00B431D3 /* transferTokensViewController.swift */,
+				799F84552A3F9F4000B431D3 /* addUserViewController.swift */,
+				799F84532A3F9F1B00B431D3 /* selectedUserViewController.swift */,
+				799F84512A3F792A00B431D3 /* editProfileViewController.swift */,
 				79186AC22A3DFEA9000DDC74 /* importProjectViewController.swift */,
 				79E9CD172A3BEE7C005EB563 /* projectMembersTableViewCell.swift */,
 				79E9CD152A3BEE26005EB563 /* projectMembersViewController.swift */,
@@ -411,7 +423,9 @@
 				79D503A62A3AB5D500A33ED7 /* customNavigationController.swift in Sources */,
 				79E9CD142A3BC3C2005EB563 /* newProposal3ViewController.swift in Sources */,
 				7957D96C2A3A34CB0034AA4B /* proposalsViewController.swift in Sources */,
+				799F84582A3F9F5F00B431D3 /* transferTokensViewController.swift in Sources */,
 				79C44EEF2A3B70D300784CF9 /* newProjectViewController.swift in Sources */,
+				799F84562A3F9F4000B431D3 /* addUserViewController.swift in Sources */,
 				794AEB9F2A37C16C003A55C9 /* IntroViewController.swift in Sources */,
 				794AEB6E2A379033003A55C9 /* ViewController.swift in Sources */,
 				79E9CD162A3BEE26005EB563 /* projectMembersViewController.swift in Sources */,
@@ -422,7 +436,9 @@
 				79E9CD182A3BEE7C005EB563 /* projectMembersTableViewCell.swift in Sources */,
 				794AEB6C2A379033003A55C9 /* SceneDelegate.swift in Sources */,
 				79E9CD122A3BC3B3005EB563 /* newProposal2ViewController.swift in Sources */,
+				799F84522A3F792A00B431D3 /* editProfileViewController.swift in Sources */,
 				794AEBA32A37DD18003A55C9 /* projectListTableViewCell.swift in Sources */,
+				799F84542A3F9F1B00B431D3 /* selectedUserViewController.swift in Sources */,
 				79E9CD102A3BC3A6005EB563 /* newProposal1ViewController.swift in Sources */,
 				794AEB742A379033003A55C9 /* Web3ProjectManagement.xcdatamodeld in Sources */,
 				79186AC32A3DFEA9000DDC74 /* importProjectViewController.swift in Sources */,

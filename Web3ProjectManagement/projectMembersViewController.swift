@@ -188,5 +188,13 @@ class projectMembersViewController: UIViewController, UITableViewDelegate, UITab
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return users.count
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: "viewUserSegue", sender: self)
+        
+    }
+    
+    
 
 }
