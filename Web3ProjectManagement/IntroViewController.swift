@@ -34,7 +34,16 @@ class IntroViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func continueButtonPress(_ sender: Any) {
+        
+        myAddressStringGlobal = publicAddressTextField.text!
+        
+        myPrivateKeyStringGlobal = privateKeyTextField.text!
+        
+        performSegue(withIdentifier: "continue", sender: self)
+        
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -128,13 +128,17 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
             let result = await createTransaction()
             switch result {
             case .success(let transaction):
+                
+                let result = try await web3.eth.send(transaction)
+                
                 submitButton.isEnabled = false
                 balanceLabel.text = "vote sent successfully!"
+                
                 // use transaction
             case .failure(let error):
                 // handle error
                 if(error.localizedDescription.contains("Already voted")){
-                    balanceLabel.text = "already voted!!!"
+                    balanceLabel.text = "you already voted!"
                 } else {
                     balanceLabel.text = "error"
                 }
@@ -167,7 +171,9 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
                 // handle error
                 if(error.localizedDescription.contains("Already voted")){
                     balanceLabel.text = "already voted!!!"
-                    costLabel.text = "estimated gas fee: tap to estimate"
+                    
+                    costLabel.text = "waiting for all members to vote"
+                    //estimateButton.isEnabled = false
                     
                     noButton.isEnabled = false
                     yesButton.isEnabled = false
@@ -230,11 +236,11 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
                     webViewBig.isUserInteractionEnabled = false
                     webViewSmall.isUserInteractionEnabled = false
                     
-                    if(selectedProposal?.executed == false){
+                    if(selectedProposal?.votingDone == false){
                         await estimateCost()
                     }
                     
-                    if(selectedProposal?.executed == true || selectedProposal?.totalVoters == tokenHolderCount) {
+                    if(selectedProposal?.votingDone == true) {
                         bottomView.isHidden = true
                         bottomView.isUserInteractionEnabled = false
                     } else {
@@ -286,7 +292,7 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
         yesButton.isEnabled = false
         
         submitButton.tintColor = colourThemeLight2
-        submitButton.setTitle("submitting...", for: .normal)
+        submitButton.setTitle("submitting...\(voteValue) vote", for: .normal)
         Task{
             await submitVote(voteValue: voteValue)
             submitButton.setTitle("done", for: .normal)

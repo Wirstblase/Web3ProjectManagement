@@ -17,8 +17,13 @@ class addUserViewController: UIViewController {
     
     @IBOutlet weak var addressTextField: UITextField!
     
+    @IBOutlet weak var projectAddressTextView: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        projectAddressTextView.text = "\(selectedContractStringGlobal)"
         
         continueButton.tintColor = colourThemeLight2
         cameraButton.tintColor = colourThemeLight2

@@ -190,7 +190,7 @@ class transferTokensViewController: UIViewController {
         loadBalance()
         
         Task {
-            userTokenLabel.text = "you own:\(await getTokenCountForAddress(inputAddress: EthereumAddress(myAddressStringGlobal)!))"
+            userTokenLabel.text = "you own: \(await getTokenCountForAddress(inputAddress: EthereumAddress(myAddressStringGlobal)!)) tokens"
             
             selectedUserLabel.text = await getUserNameForAddress(inputAddress: EthereumAddress(selectedUserStringGlobal)!)
             let selectedUserImage = await getProfilePictureForAddress(inputAddress: EthereumAddress(selectedUserStringGlobal)!)
@@ -250,7 +250,7 @@ class transferTokensViewController: UIViewController {
                 transferButton.setTitle("sent", for: .normal)
                 tokenTextField.isEnabled = false
                 
-                userTokenLabel.text = "you now own:\(await getTokenCountForAddress(inputAddress: EthereumAddress(myAddressStringGlobal)!))"
+                userTokenLabel.text = "you now own: \(await getTokenCountForAddress(inputAddress: EthereumAddress(myAddressStringGlobal)!)) tokens"
             }
             
         } else {

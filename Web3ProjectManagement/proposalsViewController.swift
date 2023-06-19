@@ -20,6 +20,7 @@ struct Proposal{
     var voteCount: BigUInt
     var issuerAddress: EthereumAddress
     var totalVoters: BigUInt
+    var votingDone: Bool
 }
 
 class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
@@ -157,10 +158,11 @@ class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewD
             let voteCount = response["4"] as! BigUInt
             let totalVoters = response["5"] as! BigUInt
             let issuerAddress = response["6"] as! EthereumAddress
+            let votingDone = response["7"] as! Bool
         
-        print("loadTableData: description: \(description), success: \(success), currentVote: \(currentVote), voteCount: \(voteCount), totalVoters: \(totalVoters)")
+        print("loadTableData: description: \(description), success: \(success), currentVote: \(currentVote), voteCount: \(voteCount), totalVoters: \(totalVoters), votingDone: \(votingDone)")
             
-        let proposal:Proposal = Proposal(description: description, content: "", executed: success, currentVote: currentVote, voteCount: voteCount, issuerAddress: issuerAddress, totalVoters: totalVoters)
+        let proposal:Proposal = Proposal(description: description, content: "", executed: success, currentVote: currentVote, voteCount: voteCount, issuerAddress: issuerAddress, totalVoters: totalVoters, votingDone: votingDone)
         
             proposals.append(proposal)
         let newIndexPath = IndexPath(row: proposals.count-1, section: 0)
@@ -229,19 +231,32 @@ class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewD
             cell.proposalIssuerNameLabel.text = await getUserNameForAddress(inputAddress: proposal.issuerAddress)
         }
         
-        if(tokenHolderCount > proposal.totalVoters){
-            if(proposal.executed == false){
-                cell.proposalStatusLabel.text = "pending.. \(proposal.totalVoters)/\(tokenHolderCount) votes"
-                cell.bgView.backgroundColor = UIColorFromRGB(rgbValue: 0x9A8C98)
-                
-            }
-        } else if(tokenHolderCount == proposal.totalVoters){
+        /*
+         cell.proposalStatusLabel.text = "pending.. \(proposal.totalVoters)/\(tokenHolderCount) votes"
+         cell.bgView.backgroundColor = UIColorFromRGB(rgbValue: 0x9A8C98)
+         
+         cell.proposalStatusLabel.text = "approved"
+         cell.bgView.backgroundColor = UIColorFromRGB(rgbValue: 0x1f8038)
+         
+         cell.proposalStatusLabel.text = "rejected"
+         cell.bgView.backgroundColor = UIColorFromRGB(rgbValue: 0x80201f)
+         */
+        
+        if(proposal.votingDone == true){
             if(proposal.executed == true){
                 cell.proposalStatusLabel.text = "approved"
                 cell.bgView.backgroundColor = UIColorFromRGB(rgbValue: 0x1f8038)
             } else {
                 cell.proposalStatusLabel.text = "rejected"
                 cell.bgView.backgroundColor = UIColorFromRGB(rgbValue: 0x80201f)
+            }
+        } else {
+            if(proposal.executed == true){
+                cell.proposalStatusLabel.text = "approved"
+                cell.bgView.backgroundColor = UIColorFromRGB(rgbValue: 0x1f8038)
+            } else {
+                cell.proposalStatusLabel.text = "pending.. \(proposal.totalVoters)/\(tokenHolderCount) votes"
+                cell.bgView.backgroundColor = UIColorFromRGB(rgbValue: 0x9A8C98)
             }
         }
         

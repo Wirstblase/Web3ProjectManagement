@@ -60,7 +60,6 @@ class selectedUserViewController: UIViewController {
         if let item = response["0"] {
             
             return item as! String
-            print("getProfilePicture: \(item)")
             
         } else {
             print("getProfilePicture: Item with key '0' not found")

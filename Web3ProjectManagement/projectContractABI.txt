@@ -149,6 +149,11 @@
                 "internalType": "address",
                 "name": "proposer",
                 "type": "address"
+            },
+            {
+                "internalType": "bool",
+                "name": "votingDone",
+                "type": "bool"
             }
         ],
         "stateMutability": "view",
