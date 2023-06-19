@@ -42,15 +42,80 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
     
     @IBOutlet weak var bottomView: UIView!
     
+    var hasVoted = false
+    
     func getContent() async -> String{
         
         //MARK: this will be deprecated and replaced with getProposalContent([index])
         do{
             let response = await getDataFromSmartContract(contractAddress: EthereumAddress(selectedContractStringGlobal)!, urlString: "http://127.0.0.1:7545", abiFilename: "projectContractABI", contractFunctionToCallString: "proposals", parameters: [selectedProposalIndex!])
             
+            print("Sender: \(myAddressStringGlobal) getContent:  \(response)")
+            
             return response["1"] as! String
         }
         
+        
+    }
+    
+    func getVotedStatus() async{
+        
+        do{
+            
+            let url = URL(string: "http://127.0.0.1:7545")
+            
+            let provider = try await Web3HttpProvider(url: url!, network: Networks.Custom(networkID: 5777))
+            
+            let web3 = Web3(provider: provider)
+            
+            let contractAddress = EthereumAddress(selectedContractStringGlobal)
+            
+            print("contract address: \(selectedContractStringGlobal)")
+            
+            let path = Bundle.main.path(forResource: "projectContractABI", ofType: "txt")
+            
+            let abiString = try String(contentsOfFile: path!)
+            
+            let contract = web3.contract(abiString, at: contractAddress)
+            
+            let inputAddress = EthereumAddress(myAddressStringGlobal)
+            
+            let readOp = contract?.createReadOperation("hasVoted", parameters: [selectedProposalIndex!,inputAddress])
+            
+            readOp?.transaction.from = EthereumAddress(myAddressStringGlobal)
+            
+            let gasPrice = BigUInt(integerLiteral: 1000000000)
+            var transaction = try readOp?.transaction
+            transaction?.gasPrice = gasPrice
+            
+            let response = try await readOp?.callContractMethod()
+            
+            //print("hasVoted response for \(selectedProposalIndex!): \(response)")
+            
+            do {
+                print("hasVoted response=\(response)")
+                hasVoted = response!["0"] as! Bool
+                print("hasVoted = \(hasVoted)")
+            } catch {
+                print("cannot get response[0] in hasVoted")
+            }
+            
+        } catch {
+            print("error in getVotedStatus: \(error)")
+        }
+    
+
+        //let response = await getDataFromSmartContract(contractAddress: EthereumAddress(myAddressStringGlobal)!, urlString: "http://127.0.0.1:7545", abiFilename: "projectContractABI", contractFunctionToCallString: "hasVoted", parameters: [BigUInt(0),EthereumAddress("0x3c78EDB97934A126382B34036788A5eef1cB71F5")])
+        
+            //print("hasVoted response for \(selectedProposalIndex!): \(response)")
+        
+            /*if let item = response["0"] {
+                hasVoted = item as! Bool
+                print("hasVoted: \(item)")
+            } else {
+                print("hasVoted: Item with key '0' not found")
+            }*/
+
         
     }
     
@@ -169,19 +234,31 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
                 // use transaction
             case .failure(let error):
                 // handle error
-                if(error.localizedDescription.contains("Already voted")){
-                    balanceLabel.text = "already voted!!!"
+                
+                print("error: \(error)")
+                balanceLabel.text = error.localizedDescription
+                
+                /*if(selectedProposal?.votingDone == false){
                     
-                    costLabel.text = "waiting for all members to vote"
-                    //estimateButton.isEnabled = false
+                    print("error: \(error.localizedDescription)")
                     
-                    noButton.isEnabled = false
-                    yesButton.isEnabled = false
-                    submitButton.isEnabled = false
+                    if(error.localizedDescription.contains("Already voted")){
+                        
+                        balanceLabel.text = "already voted!!!"
+                        
+                        costLabel.text = "waiting for all members to vote"
+                        //estimateButton.isEnabled = false
+                        
+                        noButton.isEnabled = false
+                        yesButton.isEnabled = false
+                        submitButton.isEnabled = false
+                        
+                    } else {
+                        balanceLabel.text = "error"
+                    }
                     
-                } else {
-                    balanceLabel.text = "error"
-                }
+                }*/
+                
             }
             
             
@@ -206,6 +283,7 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
         Task{
             
             let content = await getContent()
+            await getVotedStatus()
             
             if(content.hasPrefix("<!Doctype html>")){
                 
@@ -237,6 +315,23 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
                     webViewSmall.isUserInteractionEnabled = false
                     
                     if(selectedProposal?.votingDone == false){
+                        
+                        if(hasVoted == true){
+                            bottomView.isHidden = true
+                            bottomView.isUserInteractionEnabled = false
+                        } else {
+                            bottomView.isHidden = false
+                            bottomView.isUserInteractionEnabled = true
+                        }
+                        
+                    } else {
+                        
+                        bottomView.isHidden = true
+                        bottomView.isUserInteractionEnabled = false
+                        
+                    }
+                    
+                    /*if(selectedProposal?.votingDone == false){
                         await estimateCost()
                     }
                     
@@ -246,7 +341,7 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
                     } else {
                         bottomView.isHidden = false
                         bottomView.isUserInteractionEnabled = true
-                    }
+                    }*/
                     
                 }
             

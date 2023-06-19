@@ -73,7 +73,15 @@ class importProjectViewController: UIViewController {
             
             var transaction = try writeTx!.transaction
             
-            transaction.gasLimit = try await web3.eth.estimateGas(for: transaction)
+            var gasLimit: BigUInt = try await web3.eth.estimateGas(for: transaction)
+            print("estimated gas limit: \(gasLimit * 50)")
+            if(gasLimit * 50 > BigUInt(6721975)){
+                gasLimit = BigUInt(5000000)
+            } else {
+                gasLimit = gasLimit * BigUInt(50)
+            }
+            
+            transaction.gasLimit = gasLimit
             transaction.gasPrice = try await web3.eth.gasPrice()
             transaction.from = EthereumAddress(myAddressStringGlobal)
             transaction.nonce = try await web3.eth.getTransactionCount(for: EthereumAddress(myAddressStringGlobal)!)
@@ -144,6 +152,7 @@ class importProjectViewController: UIViewController {
         if(projectAddressTextField.text == ""){
             statusTextView.text = "project address cannot be empty"
         } else {
+            gasFeeLabel.text = "estimated gas fee: estimating..."
             Task{
                 let transaction = await createTransaction()
                 
@@ -172,13 +181,15 @@ class importProjectViewController: UIViewController {
         if(projectAddressTextField.text == ""){
             statusTextView.text = "project address cannot be empty"
         } else {
+            statusTextView.text = "importing.."
             Task{
                 importButton.isEnabled = false
                 checkButton.isEnabled = false
                 projectAddressTextField.isEnabled = false
-                importButton.setTitle("importing", for: .normal)
+                
                 await importProject()
                 statusTextView.text = "Request sent! The project will appear on the list once the transaction gets approved. You can safely leave this page by swiping down"
+                importButton.setTitle("done", for: .normal)
             }
             
         }

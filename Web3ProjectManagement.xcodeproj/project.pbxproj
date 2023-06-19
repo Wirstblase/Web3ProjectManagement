@@ -27,6 +27,7 @@
 		794AEBEE2A3809CA003A55C9 /* userManagerABI.txt in Resources */ = {isa = PBXBuildFile; fileRef = 794AEBED2A3809CA003A55C9 /* userManagerABI.txt */; };
 		7957D96C2A3A34CB0034AA4B /* proposalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7957D96B2A3A34CB0034AA4B /* proposalsViewController.swift */; };
 		7957D96E2A3A34F40034AA4B /* proposalsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7957D96D2A3A34F40034AA4B /* proposalsTableViewCell.swift */; };
+		7958E0C72A3FFFC30095A58F /* yourProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7958E0C62A3FFFC30095A58F /* yourProfileViewController.swift */; };
 		799F84522A3F792A00B431D3 /* editProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F84512A3F792A00B431D3 /* editProfileViewController.swift */; };
 		799F84542A3F9F1B00B431D3 /* selectedUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F84532A3F9F1B00B431D3 /* selectedUserViewController.swift */; };
 		799F84562A3F9F4000B431D3 /* addUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F84552A3F9F4000B431D3 /* addUserViewController.swift */; };
@@ -85,6 +86,7 @@
 		794AEBED2A3809CA003A55C9 /* userManagerABI.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = userManagerABI.txt; sourceTree = "<group>"; };
 		7957D96B2A3A34CB0034AA4B /* proposalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proposalsViewController.swift; sourceTree = "<group>"; };
 		7957D96D2A3A34F40034AA4B /* proposalsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proposalsTableViewCell.swift; sourceTree = "<group>"; };
+		7958E0C62A3FFFC30095A58F /* yourProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yourProfileViewController.swift; sourceTree = "<group>"; };
 		799F84512A3F792A00B431D3 /* editProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editProfileViewController.swift; sourceTree = "<group>"; };
 		799F84532A3F9F1B00B431D3 /* selectedUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectedUserViewController.swift; sourceTree = "<group>"; };
 		799F84552A3F9F4000B431D3 /* addUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addUserViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				794AEB6B2A379033003A55C9 /* SceneDelegate.swift */,
 				794AEB6D2A379033003A55C9 /* ViewController.swift */,
 				794AEB6F2A379033003A55C9 /* Main.storyboard */,
+				7958E0C62A3FFFC30095A58F /* yourProfileViewController.swift */,
 				799F84572A3F9F5F00B431D3 /* transferTokensViewController.swift */,
 				799F84552A3F9F4000B431D3 /* addUserViewController.swift */,
 				799F84532A3F9F1B00B431D3 /* selectedUserViewController.swift */,
@@ -438,6 +441,7 @@
 				79E9CD122A3BC3B3005EB563 /* newProposal2ViewController.swift in Sources */,
 				799F84522A3F792A00B431D3 /* editProfileViewController.swift in Sources */,
 				794AEBA32A37DD18003A55C9 /* projectListTableViewCell.swift in Sources */,
+				7958E0C72A3FFFC30095A58F /* yourProfileViewController.swift in Sources */,
 				799F84542A3F9F1B00B431D3 /* selectedUserViewController.swift in Sources */,
 				79E9CD102A3BC3A6005EB563 /* newProposal1ViewController.swift in Sources */,
 				794AEB742A379033003A55C9 /* Web3ProjectManagement.xcdatamodeld in Sources */,

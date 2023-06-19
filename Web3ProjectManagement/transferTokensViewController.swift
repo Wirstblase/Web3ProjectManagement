@@ -235,29 +235,45 @@ class transferTokensViewController: UIViewController {
     }
     
     @IBAction func transferButtonPress(_ sender: Any) {
-        if(sure == true){
+        tokenCount = BigUInt(Int(tokenTextField.text!)!)
+        
+        Task{
             
-            Task{
+            let userTokenCount = await getTokenCountForAddress(inputAddress: EthereumAddress(myAddressStringGlobal)!)
+            
+            print("userTokenCount: \(userTokenCount), tokenCount: \(tokenCount), senderAddress: \(myAddressStringGlobal), recipientAddress: \(selectedUserStringGlobal)")
+            
+            if(tokenCount >= userTokenCount)
+                {
                 
-                transferButton.tintColor = colourThemeLight2
-                transferButton.setTitle("sending...", for: .normal)
+                    ethBalanceLabel.text = "cannot send more than \((userTokenCount-BigUInt(1)).description) tokens"
+                    
+            }  else {
                 
-                await sendTokens()
-                
-                swipeDownLabel.text = "swipe down to exit"
-                ethBalanceLabel.text = "tokens sent!"
-                gasFeeLabel.text = "you can safely exit this page"
-                transferButton.setTitle("sent", for: .normal)
-                tokenTextField.isEnabled = false
-                
-                userTokenLabel.text = "you now own: \(await getTokenCountForAddress(inputAddress: EthereumAddress(myAddressStringGlobal)!)) tokens"
+                if(sure == true){
+                    
+                    transferButton.tintColor = colourThemeLight2
+                    transferButton.setTitle("sending...", for: .normal)
+                    
+                    await sendTokens()
+                    
+                    swipeDownLabel.text = "swipe down to exit"
+                    ethBalanceLabel.text = "tokens sent!"
+                    gasFeeLabel.text = "you can safely exit this page"
+                    transferButton.setTitle("sent", for: .normal)
+                    tokenTextField.isEnabled = false
+                    
+                    userTokenLabel.text = "you now own: \(await getTokenCountForAddress(inputAddress: EthereumAddress(myAddressStringGlobal)!)) tokens"
+                    
+                } else {
+                    
+                    transferButton.setTitle("are you sure?", for: .normal)
+                    transferButton.tintColor = colourVoteRed
+                    
+                    sure = true
+                    
+                }
             }
-            
-        } else {
-            transferButton.setTitle("are you sure?", for: .normal)
-            transferButton.tintColor = colourVoteRed
-            
-            sure = true
         }
     }
 
