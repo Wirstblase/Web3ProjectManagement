@@ -66,8 +66,8 @@ contract ProjectContract {
             proposal.currentVote -= int(balances[msg.sender]);
         }
 
-        // Check if all tokens have been used to vote
-        if (proposal.voteCount == totalSupply) {
+        // Check if all token holders have voted
+        if (proposal.totalVoters == tokenHolders.length) {
             // If more than 50 tokens voted true, execute the proposal
             if (proposal.currentVote > 0) {
                 proposal.executed = true;
