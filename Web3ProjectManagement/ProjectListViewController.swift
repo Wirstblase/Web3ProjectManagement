@@ -435,6 +435,7 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedContractStringGlobal = projects[indexPath.row].address
+        selectedProjectNameGlobal = projects[indexPath.row].name
         performSegue(withIdentifier: "loadProjectFeedSegue", sender: self)
     }
 

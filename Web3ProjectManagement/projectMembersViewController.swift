@@ -60,6 +60,8 @@ class projectMembersViewController: UIViewController, UITableViewDelegate, UITab
         super.viewDidLoad()
         
         getUsers()
+        
+        addMemberButton.tintColor = colourThemeLight2
 
         tableView.delegate = self
         tableView.dataSource = self
@@ -177,6 +179,8 @@ class projectMembersViewController: UIViewController, UITableViewDelegate, UITab
         
         cell.tokenLabel.text = users[indexPath.row].tokens.description
         
+        cell.selectionStyle = .none
+        
         return cell
         
     }
@@ -191,10 +195,15 @@ class projectMembersViewController: UIViewController, UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        performSegue(withIdentifier: "viewUserSegue", sender: self)
+        if(users[indexPath.row].address.address == myAddressStringGlobal){
+            print("you can't select your own address")
+        } else {
+            
+            selectedUserStringGlobal = users[indexPath.row].address.address
+            
+            performSegue(withIdentifier: "viewUserSegue", sender: self)
+        }
         
     }
-    
-    
 
 }

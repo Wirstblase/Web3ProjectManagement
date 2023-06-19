@@ -125,6 +125,8 @@ class newProjectViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func estimateButtonPress(_ sender: Any) {
         Task{
+            gasFeeLabel.text = "estimated gas fee: estimating..."
+            
             let transaction = await createTransaction()
             
             let gasLimit = transaction.gasLimit //bigUInt
@@ -138,7 +140,10 @@ class newProjectViewController: UIViewController, UITextFieldDelegate {
     @IBAction func createButtonPress(_ sender: Any) {
         createButton.isEnabled = false
         statusTextField.text = "creating project ..."
-        Task {await createNewProject()}
+        Task {
+            await createNewProject()
+            
+        }
     }
     
     

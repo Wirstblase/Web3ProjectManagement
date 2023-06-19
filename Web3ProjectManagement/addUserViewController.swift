@@ -8,22 +8,34 @@
 import UIKit
 
 class addUserViewController: UIViewController {
-
+    
+    @IBOutlet weak var statusTextView: UITextView!
+    
+    @IBOutlet weak var cameraButton: UIButton!
+    
+    @IBOutlet weak var continueButton: UIButton!
+    
+    @IBOutlet weak var addressTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        continueButton.tintColor = colourThemeLight2
+        cameraButton.tintColor = colourThemeLight2
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func continueButtonPress(_ sender: Any) {
+        
+        if(addressTextField.text == ""){
+            statusTextView.text = "The user address cannot be empty"
+        } else if(addressTextField.text?.count == 42){
+            selectedUserStringGlobal = addressTextField.text!
+            performSegue(withIdentifier: "continueAdding", sender: self)
+        } else {
+            statusTextView.text = "Please input a valid Ethereum address"
+        }
+        
     }
-    */
 
 }

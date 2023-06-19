@@ -17,7 +17,9 @@ var myAddressStringGlobal = " "
 var myPrivateKeyStringGlobal = ""
 var mainContractStringGlobal = ""
 var selectedContractStringGlobal = ""
+
 var selectedUserStringGlobal = ""
+var selectedProjectNameGlobal = ""
 
 var userNameStringGlobal = ""
 

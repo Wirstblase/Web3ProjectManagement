@@ -4,6 +4,7 @@
 //
 //  Created by Suflea Marius on 15.06.2023.
 //
+//  refactor 1
 
 import UIKit
 import WebKit
@@ -72,7 +73,8 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
         
     }
     
-    func createTransaction() async -> CodableTransaction{
+    
+    func createTransaction() async -> Result<CodableTransaction, Error>{
         
         
         print("createTransaction called")
@@ -107,11 +109,12 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
             print("gas price: \(try await web3.eth.gasPrice())")
 
             //print("createTransaction: \(transaction)")
-            return transaction
+            return .success(transaction)
         } catch {
             print("error in createTransaction: \(error)")
+            return .failure(error)
         }
-        return "error" as! CodableTransaction//error handling handled in caller
+        
     }
     
     func submitVote(voteValue: Bool) async{
@@ -120,16 +123,62 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
             let url = URL(string: "http://127.0.0.1:7545")
             let provider = try await Web3HttpProvider(url: url!, network: Networks.Custom(networkID: 5777))
             let web3 = Web3(provider: provider)
-            let transaction = try await createTransaction()
-            let result = try await web3.eth.send(transaction)
+            //let transaction = try await createTransaction()
             
-            submitButton.isEnabled = false
-            balanceLabel.text = "vote sent successfully!"
+            let result = await createTransaction()
+            switch result {
+            case .success(let transaction):
+                submitButton.isEnabled = false
+                balanceLabel.text = "vote sent successfully!"
+                // use transaction
+            case .failure(let error):
+                // handle error
+                if(error.localizedDescription.contains("Already voted")){
+                    balanceLabel.text = "already voted!!!"
+                } else {
+                    balanceLabel.text = "error"
+                }
+            }
+            
+            
 
         print("submitVote result: \(result)")
     } catch {
         print("error in submitVote:: \(error)")
     }
+        
+    }
+    
+    func estimateCost() async{
+        costLabel.text = "estimated gas fee: estimating..."
+        
+            //let transaction = await createTransaction()
+            
+            let result = await createTransaction()
+            switch result {
+            case .success(let transaction):
+                let gasLimit = transaction.gasLimit //bigUInt
+                
+                var formattedValue = formatEthereumBalance(gasLimit)
+                
+                costLabel.text = "estimated gas fee: \(formattedValue) ETH"
+                // use transaction
+            case .failure(let error):
+                // handle error
+                if(error.localizedDescription.contains("Already voted")){
+                    balanceLabel.text = "already voted!!!"
+                    costLabel.text = "estimated gas fee: tap to estimate"
+                    
+                    noButton.isEnabled = false
+                    yesButton.isEnabled = false
+                    submitButton.isEnabled = false
+                    
+                } else {
+                    balanceLabel.text = "error"
+                }
+            }
+            
+            
         
     }
     
@@ -144,6 +193,9 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
         submitButton.isEnabled = false
         
         self.navigationItem.title = selectedProposal?.description
+        
+        bottomView.isHidden = true
+        bottomView.isUserInteractionEnabled = false
         
         Task{
             
@@ -178,9 +230,16 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
                     webViewBig.isUserInteractionEnabled = false
                     webViewSmall.isUserInteractionEnabled = false
                     
+                    if(selectedProposal?.executed == false){
+                        await estimateCost()
+                    }
+                    
                     if(selectedProposal?.executed == true || selectedProposal?.totalVoters == tokenHolderCount) {
                         bottomView.isHidden = true
                         bottomView.isUserInteractionEnabled = false
+                    } else {
+                        bottomView.isHidden = false
+                        bottomView.isUserInteractionEnabled = true
                     }
                     
                 }
@@ -202,14 +261,8 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
     }
     
     @IBAction func estimateButtonPress(_ sender: Any) {
-        Task{
-            let transaction = await createTransaction()
-            
-            let gasLimit = transaction.gasLimit //bigUInt
-            
-            var formattedValue = formatEthereumBalance(gasLimit)
-            
-            costLabel.text = "estimated gas fee: \(formattedValue) ETH"
+        Task {
+            await estimateCost()
         }
     }
     
