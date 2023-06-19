@@ -18,7 +18,7 @@ contract ProjectContract {
         uint voteCount;
         uint totalVoters; 
         address proposer; 
-        bool votingDone; // <-- Added this
+        bool votingDone; 
         mapping (address => bool) voters;
     }
 
@@ -100,4 +100,10 @@ contract ProjectContract {
         require(index < tokenHolders.length, "Index out of bounds.");
         return tokenHolders[index];
     }
+
+    function hasVoted(uint proposalIndex, address voterAddress) public view returns (bool) {
+    Proposal storage proposal = proposals[proposalIndex];
+    return proposal.voters[voterAddress];
+    }
+
 }
