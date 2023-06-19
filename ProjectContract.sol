@@ -17,7 +17,8 @@ contract ProjectContract {
         int currentVote;
         uint voteCount;
         uint totalVoters; 
-        address proposer; // <-- Added this
+        address proposer; 
+        bool votingDone; // <-- Added this
         mapping (address => bool) voters;
     }
 
@@ -41,10 +42,11 @@ contract ProjectContract {
         newProposal.description = description;
         newProposal.content = content; 
         newProposal.executed = false;
+        newProposal.votingDone = false; // <-- Set votingDone to false initially
         newProposal.currentVote = 0;
         newProposal.voteCount = 0;
         newProposal.totalVoters = 0; 
-        newProposal.proposer = msg.sender; // <-- Set the proposer to the sender of the transaction
+        newProposal.proposer = msg.sender; 
     }
 
     function vote(uint proposalIndex, bool support) public {
@@ -56,7 +58,7 @@ contract ProjectContract {
 
         proposal.voters[msg.sender] = true;
         proposal.voteCount += balances[msg.sender];
-        proposal.totalVoters += 1; // <-- Increment totalVoters when a new vote is cast
+        proposal.totalVoters += 1; 
 
         if (support) {
             proposal.currentVote += int(balances[msg.sender]);
@@ -70,6 +72,8 @@ contract ProjectContract {
             if (proposal.currentVote > 0) {
                 proposal.executed = true;
             }
+
+            proposal.votingDone = true; // <-- Set votingDone to true when all tokens have been used to vote
         }
     }
 
