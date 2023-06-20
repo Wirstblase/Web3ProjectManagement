@@ -164,7 +164,16 @@ class proposalViewController: UIViewController, WKNavigationDelegate {
             
             var transaction = try writeTx!.transaction
             
-            transaction.gasLimit = try await web3.eth.estimateGas(for: transaction)
+            /*var gasLimit: BigUInt = try await web3.eth.estimateGas(for: transaction)
+            print("estimated gas limit: \(gasLimit * 50)")
+            if(gasLimit * 50 > BigUInt(6721975)){
+                gasLimit = BigUInt(5000000)
+            } else {
+                gasLimit = gasLimit * BigUInt(50)
+            }*/
+            let gasLimit = BigUInt(5000000)
+            
+            transaction.gasLimit = gasLimit
             transaction.gasPrice = try await web3.eth.gasPrice()
             transaction.from = EthereumAddress(myAddressStringGlobal)
             transaction.nonce = try await web3.eth.getTransactionCount(for: EthereumAddress(myAddressStringGlobal)!)

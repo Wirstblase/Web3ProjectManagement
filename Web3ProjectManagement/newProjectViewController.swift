@@ -73,7 +73,9 @@ class newProjectViewController: UIViewController, UITextFieldDelegate {
             
             var transaction = try writeTx!.transaction
             
-            transaction.gasLimit = try await web3.eth.estimateGas(for: transaction)
+            //transaction.gasLimit = try await web3.eth.estimateGas(for: transaction)
+            transaction.gasLimit = BigUInt(6721975) //future work implement better algorithm
+            
             transaction.gasPrice = try await web3.eth.gasPrice()
             transaction.from = EthereumAddress(myAddressStringGlobal)
             transaction.nonce = try await web3.eth.getTransactionCount(for: EthereumAddress(myAddressStringGlobal)!)
@@ -158,14 +160,6 @@ class newProjectViewController: UIViewController, UITextFieldDelegate {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
