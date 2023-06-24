@@ -8,11 +8,17 @@
 import UIKit
 import CoreImage.CIFilterBuiltins
 
+protocol yourProfileViewControllerDelegate: AnyObject{
+    func didFinishYourProfileViewController()
+}
+
 class yourProfileViewController: UIViewController {
 
     @IBOutlet weak var addressLabel: UITextView!
     
     @IBOutlet weak var imageView: UIImageView!
+    
+    weak var delegate: yourProfileViewControllerDelegate?
     
     func generateQRCode(from string: String) -> UIImage? {
         let data = Data(string.utf8)
@@ -43,6 +49,13 @@ class yourProfileViewController: UIViewController {
         imageView.image = qrCodeImage
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        
+        if isMovingFromParent || isBeingDismissed{
+            delegate?.didFinishYourProfileViewController()
+        }
+    }
 
     /*
     // MARK: - Navigation

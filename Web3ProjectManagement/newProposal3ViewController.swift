@@ -12,6 +12,10 @@ import BigInt
 import Network
 import Foundation
 
+protocol newProposal3ViewControllerDelegate: AnyObject{
+    func didFinishNewProposal3ViewController()
+}
+
 class newProposal3ViewController: UIViewController {
     @IBOutlet weak var estimateButton: UIButton!
     
@@ -26,6 +30,8 @@ class newProposal3ViewController: UIViewController {
     @IBOutlet weak var gasFeeLabel: UILabel!
     
     @IBOutlet weak var statusTextView: UITextView!
+    
+    weak var delegate: newProposal3ViewControllerDelegate?
     
     func loadBalance(){
         
@@ -162,6 +168,24 @@ class newProposal3ViewController: UIViewController {
         }
         
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        print("delegate tag, proposal view 3 will disappear")
+        
+        if isMovingFromParent || isBeingDismissed{
+            delegate?.didFinishNewProposal3ViewController()
+        }
+        
+    }
+    
+    /*override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        if isMovingFromParent || isBeingDismissed{
+            delegate?.didFinishNewProposal3ViewController()
+        }
+    }*/
     
     /*
     // MARK: - Navigation

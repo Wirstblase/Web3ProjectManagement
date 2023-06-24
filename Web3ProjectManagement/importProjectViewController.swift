@@ -12,6 +12,10 @@ import BigInt
 import Network
 import Foundation
 
+protocol importProjectViewControllerDelegate: AnyObject{
+    func didFinishImportProjectViewController()
+}
+
 class importProjectViewController: UIViewController {
     
     @IBOutlet weak var balanceLabel: UILabel!
@@ -27,6 +31,8 @@ class importProjectViewController: UIViewController {
     @IBOutlet weak var checkButton: UIButton!
     
     @IBOutlet weak var importButton: UIButton!
+    
+    weak var delegate: importProjectViewControllerDelegate?
     
     func loadNameForProject(projectAddress: EthereumAddress) async -> String{
         do {
@@ -192,6 +198,14 @@ class importProjectViewController: UIViewController {
                 importButton.setTitle("done", for: .normal)
             }
             
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        
+        if isMovingFromParent || isBeingDismissed{
+            delegate?.didFinishImportProjectViewController()
         }
     }
 

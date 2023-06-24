@@ -23,7 +23,7 @@ struct Proposal{
     var votingDone: Bool
 }
 
-class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource, newProposal3ViewControllerDelegate {
     
     @IBOutlet weak var plusButtonView: UIView!
     
@@ -182,21 +182,14 @@ class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewD
         return mappedValue
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        progressView.setProgress(0, animated: false)
-        
-        getProjectName()
-        getProjectTokens()
-        getTokenHolderCount()
-        
-        tableView.delegate = self
-        tableView.dataSource = self
-        
-        plusButtonView.layer.cornerRadius = 30
-        
+    func refreshData(){
         Task{
+            
+            proposals.removeAll()
+        
+            proposalCount = BigUInt(0)
+            
+            tableView.reloadData()
             
             await getProposalCount()
             
@@ -212,6 +205,23 @@ class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewD
             
             
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        progressView.setProgress(0, animated: false)
+        
+        getProjectName()
+        getProjectTokens()
+        getTokenHolderCount()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        plusButtonView.layer.cornerRadius = 30
+        
+        refreshData()
 
         // Do any additional setup after loading the view.
     }
@@ -287,8 +297,25 @@ class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewD
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+        /*if let newProposal3ViewController = segue.destination as? newProposal3ViewController{
+            newProposal3ViewController.delegate = self
+        }*/
+        
+        if let navController = segue.destination as? UINavigationController,
+               let vc = navController.viewControllers.first as? newProposal1ViewController {
+                vc.delegate = self
+                print("Set delegate for newProposal1ViewController")
+            } else if let vc = segue.destination as? newProposal2ViewController {
+                vc.delegate = self
+                print("Set delegate for newProposal2ViewController")
+            } else if let vc = segue.destination as? newProposal3ViewController {
+                vc.delegate = self
+                print("Set delegate for newProposal3ViewController")
+            }
+        
+        
+        
         if(segue.identifier == "openVoteSegue"){
             let destinationVC = segue.destination as! proposalViewController
             destinationVC.selectedProposal = selectedProposal
@@ -298,6 +325,14 @@ class proposalsViewController: UIViewController,UITableViewDelegate,UITableViewD
             destinationVC.tokenHolderCount = tokenHolderCount
         }
         
+        
+        
+    }
+    
+    func didFinishNewProposal3ViewController() {
+        print("delegate tag, new proposal view controller dismissed")
+        
+        refreshData()
     }
     
 

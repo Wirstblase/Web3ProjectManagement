@@ -12,7 +12,7 @@ import BigInt
 import Network
 import Foundation
 
-class ProjectListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, newProjectViewControllerDelegate {
+class ProjectListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, newProjectViewControllerDelegate, importProjectViewControllerDelegate, yourProfileViewControllerDelegate {
     
     @IBOutlet weak var importButton: UIButton!
     
@@ -43,44 +43,44 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
     func loadTableItemCount() async{
         
         //Task {
-            do {
-
-                let url = URL(string: "http://127.0.0.1:7545")
-                
-                let provider = try await Web3HttpProvider(url: url!, network: Networks.Custom(networkID: 5777))
-                
-                let web3 = Web3(provider: provider)
-                
-                let contractAddress = EthereumAddress(mainContractStringGlobal)
-                
-                let path = Bundle.main.path(forResource: "userManagerABI", ofType: "txt")
-                
-                let abiString = try String(contentsOfFile: path!)
-                
-                let contract = web3.contract(abiString, at: contractAddress)
-                
-                let inputAddress = EthereumAddress(myAddressStringGlobal)
-                
-                let readOp = contract?.createReadOperation("getNumberOfProjects", parameters: [inputAddress])
-                
-                readOp?.transaction.from = EthereumAddress(myAddressStringGlobal)
-                
-                let gasPrice = BigUInt(integerLiteral: 1000000000)
-                var transaction = try readOp?.transaction
-                transaction?.gasPrice = gasPrice
-                
-                let response = try await readOp?.callContractMethod()
-                
-                if let item = response?["0"] {
-                    //print("tableItemCount: \(item)")
-                    tableItemCount = item as! BigUInt
-                } else {
-                    print("Item with key '0' not found")
-                }
-                
-            } catch {
-                print("error in main task function loadTableItemCount: \(error)")
+        do {
+            
+            let url = URL(string: "http://127.0.0.1:7545")
+            
+            let provider = try await Web3HttpProvider(url: url!, network: Networks.Custom(networkID: 5777))
+            
+            let web3 = Web3(provider: provider)
+            
+            let contractAddress = EthereumAddress(mainContractStringGlobal)
+            
+            let path = Bundle.main.path(forResource: "userManagerABI", ofType: "txt")
+            
+            let abiString = try String(contentsOfFile: path!)
+            
+            let contract = web3.contract(abiString, at: contractAddress)
+            
+            let inputAddress = EthereumAddress(myAddressStringGlobal)
+            
+            let readOp = contract?.createReadOperation("getNumberOfProjects", parameters: [inputAddress])
+            
+            readOp?.transaction.from = EthereumAddress(myAddressStringGlobal)
+            
+            let gasPrice = BigUInt(integerLiteral: 1000000000)
+            var transaction = try readOp?.transaction
+            transaction?.gasPrice = gasPrice
+            
+            let response = try await readOp?.callContractMethod()
+            
+            if let item = response?["0"] {
+                //print("tableItemCount: \(item)")
+                tableItemCount = item as! BigUInt
+            } else {
+                print("Item with key '0' not found")
             }
+            
+        } catch {
+            print("error in main task function loadTableItemCount: \(error)")
+        }
         //}
         
     }
@@ -126,7 +126,7 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
                 let value = response!["0"] as? String
                 
                 let imageUrlString = value //"https://example.com/image.jpg"
-
+                
                 if let imageUrl = URL(string: imageUrlString!) {
                     DispatchQueue.global().async {
                         if let imageData = try? Data(contentsOf: imageUrl) {
@@ -185,9 +185,14 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
                 
                 let response = try await readOp?.callContractMethod()
                 
+                
+                //let response = await getDataFromSmartContract(contractAddress: EthereumAddress(myAddressStringGlobal)!, urlString: "http://127.0.0.1:7545", abiFilename: "userManagerABI", contractFunctionToCallString: "getUsername", parameters: [EthereumAddress(myAddressStringGlobal) as AnyObject])
+                
                 let value = response!["0"] as? String
                 
                 userNameLabel.text = value
+                
+                //print("getUsername: \(response)")
                 
                 
             } catch {
@@ -199,7 +204,7 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
     
     func loadNameForProject(projectAddress: EthereumAddress) async -> String{
         do {
-
+            
             let url = URL(string: "http://127.0.0.1:7545")
             
             let provider = try await Web3HttpProvider(url: url!, network: Networks.Custom(networkID: 5777))
@@ -245,7 +250,7 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
     func loadTokensForProject(projectAddress: EthereumAddress) async -> BigUInt{
         
         do {
-
+            
             let url = URL(string: "http://127.0.0.1:7545")
             
             let provider = try await Web3HttpProvider(url: url!, network: Networks.Custom(networkID: 5777))
@@ -291,64 +296,64 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func loadTableData(index: BigUInt) async{
-    
+        
         //Task {
-            do {
-
-                let url = URL(string: "http://127.0.0.1:7545")
+        do {
+            
+            let url = URL(string: "http://127.0.0.1:7545")
+            
+            let provider = try await Web3HttpProvider(url: url!, network: Networks.Custom(networkID: 5777))
+            
+            let web3 = Web3(provider: provider)
+            
+            let contractAddress = EthereumAddress(mainContractStringGlobal)
+            
+            let path = Bundle.main.path(forResource: "userManagerABI", ofType: "txt")
+            
+            let abiString = try String(contentsOfFile: path!)
+            
+            let contract = web3.contract(abiString, at: contractAddress)
+            
+            let inputAddress = EthereumAddress(myAddressStringGlobal)
+            
+            let readOp = contract?.createReadOperation("getProjectAddress", parameters: [inputAddress,index-BigUInt(1)])
+            
+            readOp?.transaction.from = EthereumAddress(myAddressStringGlobal)
+            
+            let gasPrice = BigUInt(integerLiteral: 1000000000)
+            var transaction = try readOp?.transaction
+            transaction?.gasPrice = gasPrice
+            
+            let response = try await readOp?.callContractMethod()
+            
+            if let item = response?["0"] {
+                //print("contract address: \(item)")
                 
-                let provider = try await Web3HttpProvider(url: url!, network: Networks.Custom(networkID: 5777))
+                var newTableRow:projectData = projectData(name: "", address: "", yourTokens: "")
                 
-                let web3 = Web3(provider: provider)
+                newTableRow.yourTokens = await loadTokensForProject(projectAddress: item as! EthereumAddress).formatted()
                 
-                let contractAddress = EthereumAddress(mainContractStringGlobal)
+                newTableRow.name = await loadNameForProject(projectAddress: item as! EthereumAddress)
                 
-                let path = Bundle.main.path(forResource: "userManagerABI", ofType: "txt")
+                newTableRow.address = (item as! EthereumAddress).address
                 
-                let abiString = try String(contentsOfFile: path!)
+                projects.append(newTableRow)
                 
-                let contract = web3.contract(abiString, at: contractAddress)
+                let newIndexPath = IndexPath(row: projects.count-1, section: 0)
+                tableView.insertRows(at: [newIndexPath], with: .fade)
                 
-                let inputAddress = EthereumAddress(myAddressStringGlobal)
+                //tableView.reloadData()
                 
-                let readOp = contract?.createReadOperation("getProjectAddress", parameters: [inputAddress,index-BigUInt(1)])
                 
-                readOp?.transaction.from = EthereumAddress(myAddressStringGlobal)
-                
-                let gasPrice = BigUInt(integerLiteral: 1000000000)
-                var transaction = try readOp?.transaction
-                transaction?.gasPrice = gasPrice
-                
-                let response = try await readOp?.callContractMethod()
-                
-                if let item = response?["0"] {
-                    //print("contract address: \(item)")
-                    
-                    var newTableRow:projectData = projectData(name: "", address: "", yourTokens: "")
-                    
-                    newTableRow.yourTokens = await loadTokensForProject(projectAddress: item as! EthereumAddress).formatted()
-                    
-                    newTableRow.name = await loadNameForProject(projectAddress: item as! EthereumAddress)
-                    
-                    newTableRow.address = (item as! EthereumAddress).address
-                    
-                    projects.append(newTableRow)
-                    
-                    let newIndexPath = IndexPath(row: projects.count-1, section: 0)
-                    tableView.insertRows(at: [newIndexPath], with: .fade)
-                    
-                    //tableView.reloadData()
-                    
-                    
-                    print(newTableRow)
-                    //tableItemCount = item as! BigUInt
-                } else {
-                    print("loadTableData: Item with key '0' not found")
-                }
-                
-            } catch {
-                print("error in main task function loadTableData: \(error)")
+                print(newTableRow)
+                //tableItemCount = item as! BigUInt
+            } else {
+                print("loadTableData: Item with key '0' not found")
             }
+            
+        } catch {
+            print("error in main task function loadTableData: \(error)")
+        }
         //}
         
         
@@ -373,6 +378,32 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
         
     }
     
+    func refreshData(){
+        Task{
+            
+            projects.removeAll()
+            
+            tableItemCount = BigUInt(0)
+            
+            tableView.reloadData()
+            
+            await loadTableItemCount()
+            
+            if(tableItemCount > BigUInt(0)){
+                
+                //print("in loop")
+                
+                for i in stride(from: BigUInt(0), to: tableItemCount, by: 1){
+                    //print("loops")
+                    await loadTableData(index: i+1)
+                }
+                
+            }
+            
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -390,22 +421,8 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
         loadProfilePicture()
         loadBalance()
         
-        Task{
-            
-            await loadTableItemCount()
-            
-            if(tableItemCount > BigUInt(0)){
-                
-                //print("in loop")
-                
-                for i in stride(from: BigUInt(0), to: tableItemCount, by: 1){
-                    //print("loops")
-                    await loadTableData(index: i+1)
-                }
-                
-            }
-            
-        }
+        refreshData()
+        
     }
     
     @IBAction func plusButtonPress(_ sender: Any) {
@@ -438,7 +455,7 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
         selectedProjectNameGlobal = projects[indexPath.row].name
         performSegue(withIdentifier: "loadProjectFeedSegue", sender: self)
     }
-
+    
    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -447,12 +464,34 @@ class ProjectListViewController: UIViewController, UITableViewDelegate, UITableV
         if let newProjectViewController = segue.destination as? newProjectViewController{
             newProjectViewController.delegate = self
         }
+        if let importProjectViewController = segue.destination as? importProjectViewController{
+            importProjectViewController.delegate = self
+        }
+        if let yourProfileViewController = segue.destination as?
+            yourProfileViewController{
+            yourProfileViewController.delegate = self
+        }
         
     }
     
     func didFinishNewProjectViewController() {
         print("new project view controller DISMISSED")
-        //MARK: implement
+        
+        refreshData()
+    }
+    
+    func didFinishImportProjectViewController() {
+        print("import project view controller DISMISSED")
+        
+        refreshData()
+    }
+    
+    func didFinishYourProfileViewController() {
+        print("your profile view controller DISMISSED")
+        
+        loadUsername()
+        loadProfilePicture()
+        loadBalance()
     }
     
     

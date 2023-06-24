@@ -76,7 +76,7 @@
                                 <color key="textColor" red="0.60282450909999996" green="0.54903829100000001" blue="0.5945487022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3df0e78022f61130bf1ddb272c66cad1ffd05ebf8e4a3af25e91175b0618c3ff" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YBD-Nw-Ztd">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="5169049e4f250400d2e177bccc07286533ab79b93c061f69dfc93fc0b2759cd3" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YBD-Nw-Ztd">
                                 <rect key="frame" x="40" y="527" width="334" height="34"/>
                                 <color key="backgroundColor" red="0.28839126230000001" green="0.30494147539999999" blue="0.41250830890000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.9503539205" green="0.91311699150000003" blue="0.89243203400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -111,7 +111,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0x437eF10aAbEC9C60122BdeB1f7786e72320aD15D" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zvc-1P-ug7">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0x551BEF62bD543f651E688723BD54cE4f54b008Cb" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zvc-1P-ug7">
                                 <rect key="frame" x="40" y="442" width="334" height="34"/>
                                 <color key="backgroundColor" red="0.28839126230000001" green="0.30494147539999999" blue="0.41250830890000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.9503539205" green="0.91311699150000003" blue="0.89243203400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -607,19 +607,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12N-L8-EZo">
-                                <rect key="frame" x="0.0" y="20" width="187" height="21"/>
+                                <rect key="frame" x="0.0" y="76" width="187" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                 <color key="textColor" red="0.9503539205" green="0.91311699150000003" blue="0.89243203400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="members:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIL-XV-5Io">
-                                <rect key="frame" x="10" y="61" width="177" height="21"/>
+                                <rect key="frame" x="10" y="117" width="177" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" red="0.9503539205" green="0.91311699150000003" blue="0.89243203400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Gek-Ux-EjA">
-                                <rect key="frame" x="0.0" y="92" width="414" height="794"/>
+                                <rect key="frame" x="0.0" y="148" width="414" height="738"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="memberTableCell" rowHeight="88" id="Gjn-pI-lEt" customClass="projectMembersTableViewCell" customModule="Web3ProjectManagement" customModuleProvider="target">
@@ -698,7 +698,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptw-EN-Bf7">
-                                <rect key="frame" x="237" y="24" width="100" height="60"/>
+                                <rect key="frame" x="237" y="80" width="100" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="nqQ-eS-6pR"/>
                                     <constraint firstAttribute="width" constant="100" id="xAb-Cg-1ha"/>
@@ -1210,13 +1210,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected user" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgq-XE-HcE">
-                                <rect key="frame" x="10" y="60" width="394" height="21"/>
+                                <rect key="frame" x="10" y="116" width="394" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                 <color key="textColor" red="0.9503539205" green="0.91311699150000003" blue="0.89243203400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="0.9503539205" green="0.91311699150000003" blue="0.89243203400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POV-EI-wZA">
-                                <rect key="frame" x="30" y="111" width="354" height="141.5"/>
+                                <rect key="frame" x="30" y="167" width="354" height="141.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mjb-87-5QG">
                                         <rect key="frame" x="219.5" y="10" width="124.5" height="121.5"/>
@@ -1244,7 +1244,7 @@
                                 </constraints>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="loading address" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RkB-Tk-bH4">
-                                <rect key="frame" x="30" y="262.5" width="354" height="33"/>
+                                <rect key="frame" x="30" y="318.5" width="354" height="33"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.9503539205" green="0.91311699150000003" blue="0.89243203400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
@@ -2214,8 +2214,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="L1s-FD-dXB"/>
-        <segue reference="zRI-iS-cqu"/>
+        <segue reference="Kxc-ta-W0n"/>
+        <segue reference="E4m-pb-dMn"/>
         <segue reference="2pD-0P-O0D"/>
     </inferredMetricsTieBreakers>
     <resources>
